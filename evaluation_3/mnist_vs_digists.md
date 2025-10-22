@@ -2,9 +2,10 @@
 ## Spanish version
 
 ### MNIST.ipynb
-- **Dataset**: Utiliza el dataset MNIST completo original con imágenes de 28x28 píxeles. Los datos se cargan desde archivos locales (.idx3-ubyte).
-- **Modelo**: Implementa una Red Neuronal Convolucional (CNN), que es un modelo de aprendizaje profundo diseñado específicamente para reconocimiento de imágenes.
-- **Librerías**: Utiliza las librerías TensorFlow y Keras para construir, entrenar y evaluar la red neuronal.
+- **Dataset**: Utiliza el dataset MNIST completo original con imágenes de **28x28 píxeles**. Los datos se cargan desde archivos locales (.idx3-ubyte).
+- **Modelo**: Implementa una Red Neuronal Convolucional (CNN), que es un modelo de **aprendizaje profundo** diseñado específicamente para reconocimiento de imágenes.
+- **Librerías**: Utiliza las librerías **TensorFlow y Keras** para construir, entrenar y evaluar la red neur
+onal.
 - **Proceso**: El notebook cubre un flujo de trabajo completo de aprendizaje profundo:
   1. Carga y preprocesamiento de datos (normalización, codificación one-hot)
   2. Construcción de una arquitectura CNN multicapa
@@ -13,9 +14,9 @@
   5. Guardado del modelo entrenado y uso para predecir en una imagen personalizada nueva
 
 ### digits.ipynb
-- **Dataset**: Utiliza el dataset `digits` incluido en la librería scikit-learn. Esta es una versión mucho más pequeña y de menor resolución (8x8 píxeles) del dataset MNIST.
-- **Modelo**: Utiliza una Máquina de Vectores de Soporte (SVM), que es un algoritmo clásico de aprendizaje automático, no un modelo de aprendizaje profundo.
-- **Librerías**: Depende completamente de la librería scikit-learn para la carga de datos, entrenamiento del modelo y evaluación.
+- **Dataset**: Utiliza el dataset `digits` incluido en la librería scikit-learn. Esta es una versión mucho más pequeña y de menor resolución (**8x8 píxeles**) del dataset MNIST.
+- **Modelo**: Utiliza una Máquina de Vectores de Soporte (SVM), que es un algoritmo clásico de **aprendizaje automático**, no un modelo de aprendizaje profundo.
+- **Librerías**: Depende completamente de la librería **scikit-learn para la carga de datos, entrenamiento del modelo y evaluación**.
 - **Proceso**: Este notebook demuestra un enfoque más tradicional de aprendizaje automático:
   1. Carga del dataset desde scikit-learn
   2. División de los datos en conjuntos de entrenamiento y prueba
@@ -66,3 +67,15 @@
 | Model | Convolutional Neural Network (CNN) | Support Vector Machine (SVM) |
 | Complexity | Higher complexity, more computationally intensive | Simpler, faster to train |
 | Scope | End-to-end deep learning project | A straightforward classification example |
+
+
+
+
+## Concepts and Terms
+### MNIST
+1. Convolution layer: Detects patterns and characteristics in images, extracts features from images and groups them into larger features.
+2. Max pooling layer: Reduces the dimensionality of the data and keeps the most important information.
+3. Dense layer: 
+Capas Convolucionales/Pooling: Son como tus ojos y corteza visual. Detectan que hay "bigotes", "pelaje rayado", "cola larga" y "un tamaño mediano".
+
+Capa Densa: Es como tu cerebro razonando. Toda esa información visual llega a tu cerebro, que combina esos rasgos y concluye: "Todas estas características juntas me hacen pensar que es un 85% de probabilidad de que sea un gato atigrado, un 10% de que sea un zorro, y un 5% de otra cosa".
