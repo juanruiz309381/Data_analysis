@@ -1,0 +1,1627 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>DS_SIMPADE</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=E1BDBODSIMAT03;Persist Security Info=True;Password=;User ID=;Initial Catalog=DW_SIMPADE</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>DIM ABANDONOS TEMPORALES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ACCESO SEGURO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ACCIONES ESTUDIANTES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ACCIONES SEDES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ALCOHOLISMO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ALUMNO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ANNOS EDUCACION PREE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ANTECEDENTES DISC</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM APOYO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ART EDU SUPERIOR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ART PROG FORMACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ART PROG PRIMERA INFANCIA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ART PROG SALUD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ART SECTOR PRODUCTIVO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ASIGNATURA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ASISTE BOLETINES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ASISTE REUNIONES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ASISTENCIA PROMEDIO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM BIBLIOTECA ESCOLAR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CAMBIO DOMICILIO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CAUSAS DESERCION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CERCA PANDILLAS VANDALISMO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONFLICTO ARMADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONFLICTO COM PROFES DIR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONFLICTO ENTRE ESTUD PROFES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONFLICTO ENTRE ESTUDIANTES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONFLICTO ENTRE PROFES DIR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM CONFLICTO ENTRE PROFES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM DIFICIL APRENDIZAJE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM DISCRIMINACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EDAD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EDU PREESCOLAR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EMBARAZO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ENCERRAMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ESTABLECIMIENTO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ESTADO CONSOLIDADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ESTRATO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ETNIA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE ASOCIACION PADRES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE BIENESTAR DOC ADMIN</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE BIENESTAR ESTUDIANTIL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE COMITE CONVIVENCIA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE CONSEJO ACADEMICO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE CONSEJO DIRECTIVO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE CONSEJO ESTUDIANTIL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE CONSEJO PADRES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE ESCUELA PADRES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTE PROFE ORIENTADOR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTEN BIBLIO PUBLICAS CERCA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTEN ESPACIOS RECREATIVOS CERCA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTEN HUERTAS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM EXISTEN PROBLEMAS ABUSO SEXUAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM FUERA SISTEMA EDU</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM GENERO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM GEOGRAFIA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM GRADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM GRUPO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM GRUPOS MARGEN LEY</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM INFRAESTRUCTURA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM INTERNADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM JORNADA COMP</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM JORNADA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM LABORATORIO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM MAT TEMPRANA EDAD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM MODELO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM MOTIVOESTADO CONSOLIDADO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM NIVEL EDUCATIVO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM OTRA RAZON DESERCION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM OTRA RAZON DISCRIMINACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PAIS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PANDILLAS VANDALISMO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PARENTESCO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PERIODO ASIGNATURA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PERSONAS HOGAR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PRESENCIA FRONTERAS INVISIBLES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PROGRAMA ACTUAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM PROPIEDAD VIVIENDA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM QUE QUIERE ESTUDIAR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM RAMPAS ACCESO PER DISCAPACIDAD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM RANGO INDICADOR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM REPITE ANNO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM REPITE GRADO ACTUAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM RETIRO SIN TERMINAR ANNO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM SECRETARIA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM SECTOR CONPES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM SEDE MATERNIDAD TEMP</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM SEDES</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM SERVICIOS PUBLICOS</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM SISBEN</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM SRPA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TIEMPO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TIENE DEFINIDO ESTUDIAR</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TIENE DISCAPACIDAD</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TIPO DOC</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TIPO EMPLEO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TIPO VIVIENDA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TRABAJA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM TRIBUS URBANAS CERCA</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM UBICACION SEDE</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VECES REPITE ANNO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VICTIMA AGRESION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VICTIMA DISCRIMINACION</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VINCULACION EDU INICIAL</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VIVE SOLO</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VTA CONS SUSTANCIAS EX</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM VTA CONS SUSTANCIAS IN</ID>
+      </Dimension>
+      <Dimension>
+        <ID>DIM ZONA</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>INFO_ALUMNO</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT ALUMNO INFO 2019 ABRIL</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2019 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2019 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2020 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2021 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2022 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2023 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2024 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO INFO 2025 NOVIEMBRE</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>INFO_ESTABLECIMIENTOS</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT ESTABLECIMIENTOS 2019 ABRIL</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2019 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2019 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2020 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2021 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2022 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2023 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2024 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ESTABLECIMIENTOS 2025 NOVIEMBRE</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>DS_OTRAS_CAUSAS_DESERCION</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 ABRIL</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 NOVIEMBRE</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>INFO_OTRAS_CAUSAS_DISCRIMINACION</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 ABRIL</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 NOVIEMBRE</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>INFO_QUIERE_ESTUDIAR</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 ABRIL</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 NOVIEMBRE</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>INFO_SEDES</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>FACT SEDES 2019 ABRIL</ID>
+            <Partitions>
+              <Partition>
+                <ID>FACT SEDES 2019 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2019 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2020 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2021 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2022 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2023 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2024 NOVIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 ENERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 FEBRERO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 MARZO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 ABRIL</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 MAYO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 JUNIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 JULIO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 AGOSTO</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 SEPTIEMBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 OCTUBRE</ID>
+              </Partition>
+              <Partition>
+                <ID>FACT SEDES 2025 NOVIEMBRE</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

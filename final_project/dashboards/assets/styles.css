@@ -1,0 +1,233 @@
+/* Estilos personalizados para el Dashboard de Deserción Educativa */
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --success-color: #27ae60;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --info-color: #3498db;
+    --light-bg: #ecf0f1;
+}
+
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1) !important;
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0 !important;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* KPI Cards */
+.kpi-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.kpi-card h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.kpi-card p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    border: none;
+    padding: 12px 24px;
+    transition: all 0.3s;
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: var(--light-bg);
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border: none;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Dropdowns */
+.Select-control {
+    border-radius: 5px !important;
+}
+
+/* Graphs */
+.js-plotly-plot {
+    border-radius: 5px;
+}
+
+/* Inputs */
+input[type="number"].form-control {
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"].form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 5px;
+    border: none;
+}
+
+/* Progress bars */
+.progress {
+    border-radius: 10px;
+    background-color: #ecf0f1;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+/* List groups */
+.list-group-item {
+    border: 1px solid #dee2e6;
+    border-radius: 5px !important;
+    margin-bottom: 5px;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Badges */
+.badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* Shadows */
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .kpi-card h3 {
+        font-size: 2rem;
+    }
+
+    .card-header {
+        font-size: 0.9rem;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Loading */
+._dash-loading {
+    color: var(--primary-color) !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}

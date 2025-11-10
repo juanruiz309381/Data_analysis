@@ -1,0 +1,2202 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="51be1f8d-e663-4f62-9934-6b2ba5d14a38" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>INFO_QUIERE_ESTUDIAR</ID>
+  <Name>INFO_QUIERE_ESTUDIAR</Name>
+  <CreatedTimestamp>2019-09-16T16:07:41.663333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2021-02-11T17:55:38.913333Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="96" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-361" scrolltop="14557" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="40190" y="21405" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_QUE_QUIERE_ESTUDIAR" left="-6625" top="591" logicalid="48" controlid="1" masterid="0" hint1="0" hint2="0" width="5821" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000bd16000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_QUE_QUIERE_ESTUDIAR" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL" left="9045" top="19376" logicalid="49" controlid="2" masterid="0" hint1="0" hint2="0" width="7382" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d61c000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ESTRATO" left="18827" top="4870" logicalid="50" controlid="3" masterid="0" hint1="0" hint2="0" width="3704" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000780e00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_ESTRATO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-4114" top="1971" logicalid="51" controlid="4" masterid="0" hint1="0" hint2="0" width="15500" height="17705" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_ESTUDIO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="11" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-3715" y="2470" />
+              <point x="-3715" y="10923" />
+              <point x="11086" y="10923" />
+              <point x="11086" y="19376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16127" top="6045" logicalid="52" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="14481" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_ESTRATO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="18" destattachpoint="29" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18827" y="6444" />
+              <point x="17627" y="6444" />
+              <point x="17627" y="20226" />
+              <point x="16427" y="20226" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ALUMNO" left="-3979" top="41282" logicalid="53" controlid="6" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004311000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_ALUMNO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-2169" top="24076" logicalid="54" controlid="7" masterid="0" hint1="0" hint2="0" width="13555" height="17706" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_ALUMNO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-1770" y="41282" />
+              <point x="-1770" y="32829" />
+              <point x="11086" y="32829" />
+              <point x="11086" y="24376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_EDAD" left="3602" top="9972" logicalid="55" controlid="8" masterid="0" hint1="0" hint2="0" width="3043" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e30b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_EDAD" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6345" top="10512" logicalid="56" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="10564" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_EDAD]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="2" sourceattachpoint="13" destattachpoint="30" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6645" y="10911" />
+              <point x="7845" y="10911" />
+              <point x="7845" y="20776" />
+              <point x="9045" y="20776" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ESTABLECIMIENTO" left="1882" top="14251" logicalid="57" controlid="10" masterid="0" hint1="0" hint2="0" width="4763" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009b12000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_ESTABLECIMIENTO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6345" top="16352" logicalid="58" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="5274" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_ESTABLECIMIENTO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="2" sourceattachpoint="27" destattachpoint="32" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6645" y="16751" />
+              <point x="7845" y="16751" />
+              <point x="7845" y="21326" />
+              <point x="9045" y="21326" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ESTADO_CONSOLIDADO" left="8282" top="168" logicalid="59" controlid="12" masterid="0" hint1="0" hint2="0" width="5503" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00007f150000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_ESTADO_CONSOLIDADO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10634" top="1971" logicalid="60" controlid="13" masterid="0" hint1="0" hint2="0" width="1852" height="17705" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_ESTADO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="12" destid="2" sourceattachpoint="9" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11033" y="2470" />
+              <point x="11033" y="10923" />
+              <point x="12186" y="10923" />
+              <point x="12186" y="19376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ETNIA" left="18827" top="17238" logicalid="61" controlid="14" masterid="0" hint1="0" hint2="0" width="3122" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000320c0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_ETNIA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16127" top="18201" logicalid="62" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="3425" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_ETNIA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="14" destid="2" sourceattachpoint="14" destattachpoint="33" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18827" y="18600" />
+              <point x="17627" y="18600" />
+              <point x="17627" y="21326" />
+              <point x="16427" y="21326" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_GENERO" left="8521" top="41282" logicalid="63" controlid="16" masterid="0" hint1="0" hint2="0" width="3413" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000550d0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_GENERO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9828" top="24076" logicalid="64" controlid="17" masterid="0" hint1="0" hint2="0" width="2658" height="17706" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_GENERO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="16" destid="2" sourceattachpoint="4" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10227" y="41282" />
+              <point x="10227" y="32829" />
+              <point x="12186" y="32829" />
+              <point x="12186" y="24376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_GEOGRAFIA" left="1596" top="-1525" logicalid="65" controlid="18" masterid="0" hint1="0" hint2="0" width="4286" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000be1000009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_GEOGRAFIA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3340" top="1971" logicalid="66" controlid="19" masterid="0" hint1="0" hint2="0" width="8596" height="17705" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_GEOGRAFIA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="18" destid="2" sourceattachpoint="7" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3739" y="2470" />
+              <point x="3739" y="10923" />
+              <point x="11636" y="10923" />
+              <point x="11636" y="19376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_GRADO" left="2840" top="41282" logicalid="67" controlid="20" masterid="0" hint1="0" hint2="0" width="3281" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d10c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_GRADO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4081" top="24076" logicalid="68" controlid="21" masterid="0" hint1="0" hint2="0" width="7855" height="17706" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_GRADO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="20" destid="2" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4480" y="41282" />
+              <point x="4480" y="32829" />
+              <point x="11636" y="32829" />
+              <point x="11636" y="24376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_GRUPO" left="18827" top="10419" logicalid="69" controlid="22" masterid="0" hint1="0" hint2="0" width="3254" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60c000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_GRUPO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16127" top="12229" logicalid="70" controlid="23" masterid="0" hint1="0" hint2="0" width="3000" height="8847" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_GRUPO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="22" destid="2" sourceattachpoint="16" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18827" y="12628" />
+              <point x="17627" y="12628" />
+              <point x="17627" y="20776" />
+              <point x="16427" y="20776" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_INTERNADO" left="2756" top="21651" logicalid="71" controlid="24" masterid="0" hint1="0" hint2="0" width="3889" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000310f0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_INTERNADO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6345" top="21576" logicalid="72" controlid="25" masterid="0" hint1="0" hint2="0" width="3000" height="1837" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_INTERNADO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="24" destid="2" sourceattachpoint="19" destattachpoint="34" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6645" y="23013" />
+              <point x="7845" y="23013" />
+              <point x="7845" y="21876" />
+              <point x="9045" y="21876" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_JORNADA" left="14334" top="41282" logicalid="73" controlid="26" masterid="0" hint1="0" hint2="0" width="3598" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000e0e0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_JORNADA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12436" top="24076" logicalid="74" controlid="27" masterid="0" hint1="0" hint2="0" width="4097" height="17706" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_JORNADA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="26" destid="2" sourceattachpoint="6" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16133" y="41282" />
+              <point x="16133" y="32829" />
+              <point x="12736" y="32829" />
+              <point x="12736" y="24376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_MODELO" left="21654" top="-679" logicalid="75" controlid="28" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000700d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_MODELO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12986" top="1971" logicalid="76" controlid="29" masterid="0" hint1="0" hint2="0" width="10788" height="17705" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_MODELO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="28" destid="2" sourceattachpoint="5" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="23374" y="2470" />
+              <point x="23374" y="10923" />
+              <point x="13286" y="10923" />
+              <point x="13286" y="19376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_SECTOR_CONPES" left="27494" top="-255" logicalid="77" controlid="30" masterid="0" hint1="0" hint2="0" width="4604" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc110000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_SECTOR_CONPES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13536" top="1971" logicalid="78" controlid="31" masterid="0" hint1="0" hint2="0" width="16660" height="17705" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_SECTOR]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="30" destid="2" sourceattachpoint="9" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="29796" y="2470" />
+              <point x="29796" y="10923" />
+              <point x="13836" y="10923" />
+              <point x="13836" y="19376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_SEDES" left="18827" top="22363" logicalid="79" controlid="32" masterid="0" hint1="0" hint2="0" width="4419" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004311000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_SEDES" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16127" top="21576" logicalid="80" controlid="33" masterid="0" hint1="0" hint2="0" width="3000" height="3687" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_SEDE]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="32" destid="2" sourceattachpoint="22" destattachpoint="35" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18827" y="24863" />
+              <point x="17627" y="24863" />
+              <point x="17627" y="21876" />
+              <point x="16427" y="21876" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_SISBEN" left="3391" top="31055" logicalid="81" controlid="34" masterid="0" hint1="0" hint2="0" width="3254" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60c0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_SISBEN" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6345" top="22676" logicalid="82" controlid="35" masterid="0" hint1="0" hint2="0" width="3000" height="10141" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_SISBEN]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="34" destid="2" sourceattachpoint="15" destattachpoint="38" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6645" y="32417" />
+              <point x="7845" y="32417" />
+              <point x="7845" y="22976" />
+              <point x="9045" y="22976" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_TIEMPO" left="18827" top="29763" logicalid="83" controlid="36" masterid="0" hint1="0" hint2="0" width="3016" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_TIEMPO" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16127" top="22126" logicalid="84" controlid="37" masterid="0" hint1="0" hint2="0" width="3000" height="10034" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_TIEMPO]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="36" destid="2" sourceattachpoint="16" destattachpoint="37" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18827" y="31760" />
+              <point x="17627" y="31760" />
+              <point x="17627" y="22426" />
+              <point x="16427" y="22426" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_TIENE_DISCAPACIDAD" left="1380" top="26776" logicalid="85" controlid="38" masterid="0" hint1="0" hint2="0" width="5265" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009114000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_TIENE_DISCAPACIDAD" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6345" top="22126" logicalid="86" controlid="39" masterid="0" hint1="0" hint2="0" width="3000" height="5989" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_TIENE_DISC]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="38" destid="2" sourceattachpoint="21" destattachpoint="36" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6645" y="27715" />
+              <point x="7845" y="27715" />
+              <point x="7845" y="22426" />
+              <point x="9045" y="22426" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_TIPO_DOC" left="25748" top="41282" logicalid="87" controlid="40" masterid="0" hint1="0" hint2="0" width="3704" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000780e00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_TIPO_DOC" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="13536" top="24076" logicalid="88" controlid="41" masterid="0" hint1="0" hint2="0" width="14464" height="17706" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_TIPODOC]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="40" destid="2" sourceattachpoint="6" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="27600" y="41282" />
+              <point x="27600" y="32829" />
+              <point x="13836" y="32829" />
+              <point x="13836" y="24376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_ZONA" left="16185" top="-679" logicalid="89" controlid="42" masterid="0" hint1="0" hint2="0" width="3069" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_ZONA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12436" top="1971" logicalid="90" controlid="43" masterid="0" hint1="0" hint2="0" width="5683" height="17705" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_ZONA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="42" destid="2" sourceattachpoint="5" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="17719" y="2470" />
+              <point x="17719" y="10923" />
+              <point x="12736" y="10923" />
+              <point x="12736" y="19376" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_PAIS" left="18827" top="36158" logicalid="91" controlid="44" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_PAIS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16127" top="23226" logicalid="92" controlid="45" masterid="0" hint1="0" hint2="0" width="3000" height="14694" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_PAIS]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="44" destid="2" sourceattachpoint="14" destattachpoint="41" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18827" y="37520" />
+              <point x="17627" y="37520" />
+              <point x="17627" y="23526" />
+              <point x="16427" y="23526" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DIM_SRPA" left="21364" top="41229" logicalid="93" controlid="46" masterid="0" hint1="0" hint2="0" width="3016" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="DW_DIM_SRPA" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12986" top="24076" logicalid="94" controlid="47" masterid="0" hint1="0" hint2="0" width="9186" height="17653" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[[PK_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL_SRPA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="46" destid="2" sourceattachpoint="0" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="21772" y="41229" />
+              <point x="21772" y="32829" />
+              <point x="13286" y="32829" />
+              <point x="13286" y="24376" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-361</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>14557</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-6625</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1525</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2021-12-01T06:42:59.806667Z</LastProcessed>
+  <State>Processed</State>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <Dimensions>
+    <Dimension dwd:design-time-name="b19d3cd2-111d-44bc-943b-75a44b110c0e">
+      <ID>DIM QUE QUIERE ESTUDIAR</ID>
+      <Name>DIM QUE QUIERE ESTUDIAR</Name>
+      <DimensionID>DIM QUE QUIERE ESTUDIAR</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8a7cefac-cfa0-4f4e-bf4c-cad3091801ec">
+          <AttributeID>ID DIM QUE QUIERE ESTUDIAR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1de165ba-6006-4b5e-8922-a572b12b1265">
+          <AttributeID>QUE QUIERE ESTUDIAR</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="858e4092-d90f-4984-a26f-b70ebc997d03">
+      <ID>DIM ALUMNO</ID>
+      <Name>DIM ALUMNO</Name>
+      <DimensionID>DIM ALUMNO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="eddcfd42-6cd6-4028-99ad-509b5b7a15de">
+          <AttributeID>ID DIM ALUMNO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="601fe445-0fd7-4abc-85ea-cbe57a3c9a2e">
+          <AttributeID>NOMBRE COMPLETO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a174f68f-c621-42c9-ae22-f945acc3aeb9">
+          <AttributeID>GENERO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3682605b-8b1b-48fd-b631-ee33d08e1b5f">
+          <AttributeID>TIPO DOCUMENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f15e0655-d4af-4a28-9cf9-952780b7d89a">
+          <AttributeID>ESTRATO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4a5aa772-2026-4b5c-85fc-575b668a503e">
+      <ID>DIM EDAD</ID>
+      <Name>DIM EDAD</Name>
+      <DimensionID>DIM EDAD</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="234bdfe0-9725-46f0-a929-ef65602f930a">
+          <AttributeID>ID DIM EDAD</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7cbd7534-f406-4d9d-9428-8eb1e24b04a3">
+          <AttributeID>EDAD</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bdf6ecf3-11c1-473c-ae1c-0de9a4e639d7">
+      <ID>DIM ESTABLECIMIENTO</ID>
+      <Name>DIM ESTABLECIMIENTO</Name>
+      <DimensionID>DIM ESTABLECIMIENTO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7424d4d1-c79a-4d4d-8feb-e7a7b48bc1e9">
+          <AttributeID>ID DIM ESTABLECIMIENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b93b5787-f9d2-47ff-9d93-e703bdf8e262">
+          <AttributeID>ESTABLECIMIENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="20b7df0f-e42c-4d43-92ef-2a0d1167b3bd">
+          <AttributeID>SECRETARIA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c2155ae6-6da8-4081-a72e-14cca833713e">
+          <AttributeID>MUNICIPIO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0110390-51e5-4ade-aea7-70a780e85e34">
+          <AttributeID>DEPARTAMENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e51e3bfc-48de-46d3-84f1-e4bcf16a582f">
+          <AttributeID>DANE ESTABLECIMIENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e11e93ca-4b01-492a-a905-8d1d09d038b2">
+          <AttributeID>ESTADO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8e396549-ceb1-4223-abb8-4cf07d922cb8">
+      <ID>DIM ESTADO CONSOLIDADO</ID>
+      <Name>DIM ESTADO CONSOLIDADO</Name>
+      <DimensionID>DIM ESTADO CONSOLIDADO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="463d905f-03b7-4f1d-9249-dfee94033911">
+          <AttributeID>ID DIM ESTADO CONSOLIDADO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="603b6536-9b69-4887-bd35-b91e3c5e54c5">
+          <AttributeID>ESTADO CONSOLIDADO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8d13e4cd-4737-4547-8fa1-611686f8ab79">
+      <ID>DIM ESTRATO</ID>
+      <Name>DIM ESTRATO</Name>
+      <DimensionID>DIM ESTRATO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="807c8d07-b53e-4ddc-a923-94ab9c065e77">
+          <AttributeID>ID DIM ESTRATO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ee9e3c42-bce7-4367-9d1e-1b4cc7132225">
+          <AttributeID>ESTRATO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="959bab5d-06d4-4138-a6cc-daf7ef5d7d94">
+      <ID>DIM ETNIA</ID>
+      <Name>DIM ETNIA</Name>
+      <DimensionID>DIM ETNIA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="943d015c-f832-4e5c-a525-dca5c4190e41">
+          <AttributeID>ID DIM ETNIA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4b1b0ef3-667f-4300-9af9-dd25e9f3d54a">
+          <AttributeID>ETNIA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fdf63c49-376e-496f-bb07-ac6371eb74ba">
+      <ID>DIM GENERO</ID>
+      <Name>DIM GENERO</Name>
+      <DimensionID>DIM GENERO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="211ad8a5-b9ea-4f0c-b8ff-79cc18b0e77b">
+          <AttributeID>ID DIM GENERO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f7570497-8c49-4ac7-95ff-6c28512bd945">
+          <AttributeID>GENERO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3cb78c86-06fc-42f2-ad88-1414f46e41c4">
+      <ID>DIM GEOGRAFIA</ID>
+      <Name>DIM GEOGRAFIA</Name>
+      <DimensionID>DIM GEOGRAFIA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8a3d9538-af5d-489b-baff-585bb8b8b96d">
+          <AttributeID>ID DIM GEOGRAFIA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2991c8a5-a811-4f37-b942-f42a3a208468">
+          <AttributeID>DEPARTAMENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e40535a3-02f6-4b1d-b2e8-89fc98aba916">
+          <AttributeID>COD DANE DEPTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77d32ad9-4774-4f59-9c73-0f8f288549e3">
+          <AttributeID>MUNICIPIO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="546bd6a0-69ca-4f42-90b9-f906f62557d0">
+          <AttributeID>COD DANE MUNICIPIO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cfadf12b-7220-46d7-b6ed-4068a694bbd9">
+      <ID>DIM GRADO</ID>
+      <Name>DIM GRADO</Name>
+      <DimensionID>DIM GRADO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dd3c290d-fc0b-4443-ae7b-0e41fbdb73f0">
+          <AttributeID>ID DIM GRADO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e110bad3-448c-4250-a5a5-bf21551bb8b9">
+          <AttributeID>GRADO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bef00c9f-08ce-41d6-a8b8-983ad45855c8">
+      <ID>DIM GRUPO</ID>
+      <Name>DIM GRUPO</Name>
+      <DimensionID>DIM GRUPO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a6ba3027-da11-429e-a652-5e63391e7100">
+          <AttributeID>ID DIM GRUPO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9f0d5ca0-7594-4a72-b059-acd312dd3bea">
+          <AttributeID>GRUPO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4478ae1d-3389-4d3c-a02e-901a6e085243">
+          <AttributeID>ORDEN</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="196804ad-e285-46e8-b285-6f3cf021d028">
+      <ID>DIM INTERNADO</ID>
+      <Name>DIM INTERNADO</Name>
+      <DimensionID>DIM INTERNADO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f41fedf2-300c-4090-a408-7953e38fb905">
+          <AttributeID>ID DIM INTERNADO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c759375e-da06-4790-9f80-08165928fd03">
+          <AttributeID>INTERNADO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="adea2eba-c4d4-411c-b5d5-4f5dc5c65004">
+      <ID>DIM JORNADA</ID>
+      <Name>DIM JORNADA</Name>
+      <DimensionID>DIM JORNADA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7f31d1ea-02b5-431e-9681-aa5b4c83c65c">
+          <AttributeID>ID DIM JORNADA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9e4b6fe3-fac5-447e-bf70-24d0cca11282">
+          <AttributeID>JORNADA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="19e92c3a-c4ec-4599-835b-1c7106ab35a6">
+      <ID>DIM MODELO</ID>
+      <Name>DIM MODELO</Name>
+      <DimensionID>DIM MODELO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e6bafa38-caa1-4720-90c3-6da2d0699d09">
+          <AttributeID>ID DIM MODELO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="146016d3-8c65-4215-860b-fb66d73abe77">
+          <AttributeID>MODELO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1af225b4-e019-4714-83af-85b4ebe63473">
+      <ID>DIM SECTOR CONPES</ID>
+      <Name>DIM SECTOR CONPES</Name>
+      <DimensionID>DIM SECTOR CONPES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d79e6f26-9037-4000-b7b8-67e40a1148fb">
+          <AttributeID>ID DIM SECTOR CONPES</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f8814daf-57c1-432c-a05e-13bcb9d91226">
+          <AttributeID>SECTOR CONPES</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fcd1f372-9148-4d56-976a-a47c5ed2304e">
+      <ID>DIM SEDES</ID>
+      <Name>DIM SEDES</Name>
+      <DimensionID>DIM SEDES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="672a3709-355e-4f75-b624-0d3a5386644d">
+          <AttributeID>ID DIM SEDE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6dbb811f-4a1e-424d-8508-d66cef05a91b">
+          <AttributeID>SEDE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="33bac002-ebac-42ea-b0c4-5d08c89aad32">
+          <AttributeID>ESTABLECIMIENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c517e9b6-5f16-43f8-bfae-6164c4b8bfcf">
+          <AttributeID>COD DANE SEDE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="95163ec0-ec97-4bc2-9a61-1ff1795c4806">
+          <AttributeID>ZONA SEDE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="332c4175-0f49-4710-a844-4371afb8d5f6">
+          <AttributeID>MUNICIPIO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="44e6e610-b909-4b77-aa08-d07c6af08f02">
+          <AttributeID>DEPARTAMENTO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9c4320ef-8aac-41b5-bbe7-dd557090f4e9">
+          <AttributeID>ESTADO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f2c7c398-ae0c-464e-84ed-44aa07421c9c">
+      <ID>DIM SISBEN</ID>
+      <Name>DIM SISBEN</Name>
+      <DimensionID>DIM SISBEN</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dc2594f2-754d-4218-820a-0ef049298323">
+          <AttributeID>ID DIM SISBEN</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="62a94930-1750-4d1c-842f-8bd6ff4d29fa">
+          <AttributeID>NIVEL SISBEN</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7a6f026c-a7cd-47a0-8d1b-4f06a586be6a">
+      <ID>DIM TIEMPO</ID>
+      <Name>DIM TIEMPO</Name>
+      <DimensionID>DIM TIEMPO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f46bd899-f13d-49c8-88e0-a53da7fd1613">
+          <AttributeID>ID FECHA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3734e6f8-9d56-4903-b387-d0cbec5e0220">
+          <AttributeID>ANNO</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b263f56b-9392-4c8d-8780-e297d2c7fe3e">
+          <AttributeID>MES</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="88ab42b5-307f-4ad9-a53d-1f715a333912">
+          <AttributeID>ANNO MES</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6698c6e-5b59-42ef-b097-14b057f307ce">
+          <AttributeID>NOMBRE MES</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="29aa7384-7ccd-41bc-8b38-03571e9a50c7">
+      <ID>DIM TIENE DISCAPACIDAD</ID>
+      <Name>DIM TIENE DISCAPACIDAD</Name>
+      <DimensionID>DIM TIENE DISCAPACIDAD</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="245dac07-432a-4720-852e-4eedc78f18c8">
+          <AttributeID>ID DIM TIENE DISCAPACIDAD</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53f828ce-5a5a-4efa-81e2-cd86fc7ff542">
+          <AttributeID>TIENE DISCAPACIDAD</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a98ca863-6a3e-4ac7-8a7f-0df456e205f9">
+      <ID>DIM TIPO DOC</ID>
+      <Name>DIM TIPO DOC</Name>
+      <DimensionID>DIM TIPO DOC</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="faec5153-a682-4453-851c-60681a426506">
+          <AttributeID>ID DIM TIPO DOC</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1a505b77-f882-4fe8-9949-ce5d3bd12d24">
+          <AttributeID>TIPO DOC</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5b96cc62-c72a-4e2b-b26d-5335b81897a8">
+      <ID>DIM ZONA</ID>
+      <Name>DIM ZONA</Name>
+      <DimensionID>DIM ZONA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5ca9e967-7b8b-462c-91d1-d7d9b7f9887f">
+          <AttributeID>ID DIM ZONA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e88eb384-7421-4ddb-9ef8-c56649876a59">
+          <AttributeID>ZONA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9a6e8e98-377c-40d5-a4d7-a41421af6cd5">
+      <ID>DIM PAIS</ID>
+      <Name>DIM PAIS</Name>
+      <DimensionID>DIM PAIS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b41f5c80-edc9-4517-b394-0a4b897ae0df">
+          <AttributeID>ID DIM PAIS</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3728dc7d-1402-4c19-83fb-cb3d7cf78b5d">
+          <AttributeID>PAIS</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="baf4cd0d-cba7-4e74-959d-c1fa4674abe5">
+      <ID>DIM SRPA</ID>
+      <Name>DIM SRPA</Name>
+      <DimensionID>DIM SRPA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e714c6c4-37af-419e-ad2c-0c49084ca360">
+          <AttributeID>ID DIM SRPA</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="706d509e-cf3b-42ba-a9d1-0e2f90ff66ba">
+          <AttributeID>SRPA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="60b6fc71-6731-4cb5-8c37-b5dd97b053d5">
+      <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 ABRIL</ID>
+      <Name>QUE QUIERE ESTUDIAR</Name>
+      <CreatedTimestamp>2019-09-16T16:07:41.713333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2021-02-11T17:55:38.976667Z</LastSchemaUpdate>
+      <LastProcessed>2021-12-01T06:42:59.613333Z</LastProcessed>
+      <State>Processed</State>
+      <Measures>
+        <Measure dwd:design-time-name="310e12a6-2a65-459b-b3d3-94045f7e1455">
+          <ID>PER ID</ID>
+          <Name>NUM_ALUMNOS</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>BigInt</DataType>
+          <Source dwd:design-time-name="33afb59a-0103-4f18-8a00-f9a6f169b5ad">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cb0c0604-a8b6-4874-997a-4851654de0c4">
+              <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+              <ColumnID>PER_ID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>4315541</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b2e73ecf-8667-431c-80a9-fc1ec33f0504">
+          <CubeDimensionID>DIM QUE QUIERE ESTUDIAR</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5c6f9c96-0d4f-41ae-9fdf-ffd86485cb3f">
+              <AttributeID>ID DIM QUE QUIERE ESTUDIAR</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3d61d233-8c56-4286-9c98-730e394c9286">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a8437d75-25a8-47de-b21c-29170787ffed">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_DIM_QUE_QUIERE_ESTUDIAR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="972a4298-822d-44de-a9b9-281e3effdd5b">
+              <AttributeID>QUE QUIERE ESTUDIAR</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d5ed1d4b-f857-4116-8f12-030406d6be76">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ef3a35e0-d205-4f33-b9c1-3add7c125927">
+                    <TableID>DW_DIM_QUE_QUIERE_ESTUDIAR</TableID>
+                    <ColumnID>QUE_QUIERE_ESTUDIAR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c8248e91-f60a-4b10-8286-9067284d2f4b">
+          <CubeDimensionID>DIM ALUMNO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="409df33a-c83f-49ac-a77a-5b5a9b5bc17d">
+              <AttributeID>ID DIM ALUMNO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e8a7a142-a81e-4373-a759-e86c211238eb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="69cc7121-a562-469c-b485-d7bad0ad91d0">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_DIM_ALUMNO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="48df1b8b-bd3c-47cd-aae8-4454f5aaaf5c">
+              <AttributeID>NOMBRE COMPLETO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b1a43268-df0e-4348-8865-6c4b4423a571">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7eb81483-400c-48e4-a96d-bf97b562c216">
+                    <TableID>DW_DIM_ALUMNO</TableID>
+                    <ColumnID>NOMBRE_COMPLETO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3dff0d9e-2739-47f5-9da2-7825b85bb5d9">
+              <AttributeID>GENERO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0969e27a-c922-426e-a11b-364d649ca732">
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61ccc78a-9423-4696-98a6-a78a0a2dfd2e">
+                    <TableID>DW_DIM_ALUMNO</TableID>
+                    <ColumnID>GENERO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="5e6b5f05-bbfb-49d0-985f-5cff64f7e969">
+              <AttributeID>TIPO DOCUMENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f0745b03-9bfe-4fad-84d0-17d433916461">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0cc89121-cff6-44b8-abe4-4edd015856cb">
+                    <TableID>DW_DIM_ALUMNO</TableID>
+                    <ColumnID>TIPO_DOCUMENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="a62c8108-6992-4563-9d65-be1d592a8a2a">
+              <AttributeID>ESTRATO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="11383ed1-2285-4d3e-a970-726dd8ff7ff2">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="685bad91-68fb-417c-8ccc-ef7a8518e365">
+                    <TableID>DW_DIM_ALUMNO</TableID>
+                    <ColumnID>ESTRATO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9513bfbf-bb32-4aa5-a1c9-a95ca43072cc">
+          <CubeDimensionID>DIM EDAD</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c75f91f7-5c0f-45ec-998c-852c9285a85f">
+              <AttributeID>ID DIM EDAD</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d01f88f2-cbdb-4077-9120-0860a6dfeea3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="89f331fc-aa42-49a6-99ec-241202d1d721">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_EDAD</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="6549f7cf-547b-4414-b91a-84f471e8183d">
+              <AttributeID>EDAD</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f6f045d3-5f06-4107-aacb-3543763db421">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0f73d2ed-b6f9-402c-84c0-a3143fa22c22">
+                    <TableID>DW_DIM_EDAD</TableID>
+                    <ColumnID>EDAD</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="369ee5f0-4d12-4c9a-a617-e6e5cbd5b944">
+          <CubeDimensionID>DIM ESTABLECIMIENTO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e5d14b53-7c8e-4a6f-a441-60c2c13be56c">
+              <AttributeID>ID DIM ESTABLECIMIENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7ffc32be-9539-426a-bd51-c331b56f18f0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e640c4dc-32b8-4a1c-a862-6f2ff1646f4c">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_ESTABLECIMIENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="49e9bb9c-530e-4a57-8bb0-fc010db61312">
+              <AttributeID>ESTABLECIMIENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="96a03f8a-dbd2-4e20-a751-dfbdf1dbc4f9">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5ef57454-7800-4b94-a0ed-e3a162f9b4cd">
+                    <TableID>DW_DIM_ESTABLECIMIENTO</TableID>
+                    <ColumnID>ESTABLECIMIENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7f9c4c57-ef9f-4b57-9c16-e7cca7852914">
+              <AttributeID>SECRETARIA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2a6344e1-abe6-4f4d-9841-1ace1e32470b">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e1335425-1d14-42b1-bcda-013bfc396527">
+                    <TableID>DW_DIM_ESTABLECIMIENTO</TableID>
+                    <ColumnID>SECRETARIA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="83c39ee9-f3c8-44f2-8828-9bef94cbecf5">
+              <AttributeID>MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="53f6e5d8-4081-4d18-9238-1d7634a4490e">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4f6ce2d3-f2aa-4cc8-a9df-896d88629dd7">
+                    <TableID>DW_DIM_ESTABLECIMIENTO</TableID>
+                    <ColumnID>MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="11222831-5e09-4b89-a351-a36c688e909a">
+              <AttributeID>DEPARTAMENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="808340cd-b40b-40c1-9a8b-e9c93f75f245">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe6298e5-15d9-41c5-add0-874a86f28e77">
+                    <TableID>DW_DIM_ESTABLECIMIENTO</TableID>
+                    <ColumnID>DEPARTAMENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="b1aa5d57-993e-4b24-a387-c2c9808fdeb5">
+              <AttributeID>DANE ESTABLECIMIENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0774e783-9603-46f5-b720-d0b218411610">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="13c12dd9-d285-4c38-b223-04637409ca96">
+                    <TableID>DW_DIM_ESTABLECIMIENTO</TableID>
+                    <ColumnID>DANE_ESTABLECIMIENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="4d3b7e7d-ebbc-48ec-a689-981b67edb4a8">
+              <AttributeID>ESTADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="993665f6-d482-4b0c-b50d-f0d80a11e8f7">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a4e1ba1c-62a6-434e-8b50-77037ff4eebc">
+                    <TableID>DW_DIM_ESTABLECIMIENTO</TableID>
+                    <ColumnID>ESTADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c5f9a7ea-2404-44fd-9a90-540957b4f791">
+          <CubeDimensionID>DIM ESTADO CONSOLIDADO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="71bf6225-0520-4a81-a590-4ffce5445185">
+              <AttributeID>ID DIM ESTADO CONSOLIDADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e5eedfe-78e1-4652-927e-afa45349cc92">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="05e8a0ed-1ab8-4fbc-97cd-543d9cec1ba6">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_ESTADO_ALUMNO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="e85a0bf4-c279-4ddb-8c66-d711050683ed">
+              <AttributeID>ESTADO CONSOLIDADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8be31442-1a35-4c3d-8b4b-b8c4ee795c42">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d8abfb1e-bf20-4b00-a4b5-35305fcecf58">
+                    <TableID>DW_DIM_ESTADO_CONSOLIDADO</TableID>
+                    <ColumnID>ESTADO_CONSOLIDADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f86ad9a1-c8ce-4dbc-9c54-eb98fed20523">
+          <CubeDimensionID>DIM ESTRATO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cf3482f6-5932-47fa-94cc-dca2fc5552cb">
+              <AttributeID>ID DIM ESTRATO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e817cd5f-95fd-41c6-87e5-d4348cdeb710">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1015526a-c98c-4415-8e82-b181b26a6a3e">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_ESTRATO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="1a49796f-6166-4b43-83ff-f912e5dbb2a0">
+              <AttributeID>ESTRATO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="049e5ea6-b375-4e19-9524-dd08092761e8">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce317414-d99e-4efd-9270-4e7a6dc8188f">
+                    <TableID>DW_DIM_ESTRATO</TableID>
+                    <ColumnID>ESTRATO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cbe41f9c-544d-451e-a505-624417e2ab51">
+          <CubeDimensionID>DIM ETNIA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d3df9cbb-b964-4fa6-af2f-a55a413419f6">
+              <AttributeID>ID DIM ETNIA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7c1b70eb-abc9-4c42-b856-ed8289eead41">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8b127656-c5d5-43ab-b1a9-019e6ba58d48">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_ETNIA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="5ae1e2dd-848b-484d-8903-b6e7c404e952">
+              <AttributeID>ETNIA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="be1bd2db-0d16-4be2-aed6-ea5f9c740f7f">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="71225ecd-54b6-480a-912d-7f7e48655f77">
+                    <TableID>DW_DIM_ETNIA</TableID>
+                    <ColumnID>ETNIA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f6e8069e-6ca9-4f64-9530-f1ce482f6fdc">
+          <CubeDimensionID>DIM GENERO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="522fe9fb-8a8f-4552-9061-e386049d42b2">
+              <AttributeID>ID DIM GENERO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3f104c44-025f-403d-bace-cb6fd9ecbaac">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c66a3bdc-9e37-4bf1-a2ec-3188760108bb">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_GENERO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="53b0deed-65cc-44c1-8128-f2a7f48815be">
+              <AttributeID>GENERO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="79d99644-720a-4c4d-9d39-c3c0837cde62">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b7171806-7cd4-4ce5-bd69-8558051b5ab4">
+                    <TableID>DW_DIM_GENERO</TableID>
+                    <ColumnID>GENERO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="50dcad46-ca29-4d58-9847-912a2e4eb641">
+          <CubeDimensionID>DIM GEOGRAFIA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e87b7ab4-17bf-452f-b141-16531b0a2b85">
+              <AttributeID>ID DIM GEOGRAFIA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cb89fc76-1a9d-4730-8a8f-30bfe4df1de3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a103020f-a212-4e96-8238-89da787fd97b">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_GEOGRAFIA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="7db450f6-8893-4c85-b7e3-d73c8ce845ba">
+              <AttributeID>DEPARTAMENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="34b7ae05-0afc-4d12-af5f-5294db513bd3">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="14151e1f-47b4-49d4-9c54-62959ed14d6f">
+                    <TableID>DW_DIM_GEOGRAFIA</TableID>
+                    <ColumnID>DEPARTAMENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3d3fc245-eb49-4eb0-a574-16580a788a25">
+              <AttributeID>COD DANE DEPTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5d6a3402-532e-421c-bae4-afd65b58b011">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="053af8be-24e3-490a-92a5-a6878e8948e9">
+                    <TableID>DW_DIM_GEOGRAFIA</TableID>
+                    <ColumnID>COD_DANE_DEPTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="67ee1934-94ff-47a2-84de-ccd7895dc4fe">
+              <AttributeID>MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="55a1237c-9723-4e35-85fe-9e1c8ae016b9">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="510aad48-2aaf-4014-a6ae-4a448b206691">
+                    <TableID>DW_DIM_GEOGRAFIA</TableID>
+                    <ColumnID>MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="76ba90b4-609e-4bc7-9761-cea1d96d701a">
+              <AttributeID>COD DANE MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de3834c6-cd1f-4151-8428-8bdbb56f236f">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0b619c18-d848-4dea-a2ee-14e980541501">
+                    <TableID>DW_DIM_GEOGRAFIA</TableID>
+                    <ColumnID>COD_DANE_MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0be5e891-bec3-4b0c-a180-f3a1a6a3b4a3">
+          <CubeDimensionID>DIM GRADO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dc9adda4-47b4-4d6b-9e9f-a838cd2cab67">
+              <AttributeID>ID DIM GRADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0aa806fb-a322-43ee-8eab-945a89bf9ee4">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e9a91c58-189e-4a75-9ce8-3f9c3289a226">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_GRADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="7297b5f0-7008-4dbe-ab16-83459e185e11">
+              <AttributeID>GRADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8527c8ee-0f20-4afa-89ca-e30f5f81c642">
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3e7578d0-474b-44ae-a14d-6847941e2efd">
+                    <TableID>DW_DIM_GRADO</TableID>
+                    <ColumnID>GRADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="495cdc58-fe23-43e3-91ac-f6435a579789">
+          <CubeDimensionID>DIM GRUPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1aede2e0-3860-4a6c-b955-818a5b8f6b55">
+              <AttributeID>ID DIM GRUPO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1897dfec-27c6-469b-a692-35ff150e5186">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="39b743d1-18b9-40b2-bfd3-2600f01fb8b6">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_GRUPO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="e9835c69-6d8a-4a31-90f1-631d9e675428">
+              <AttributeID>GRUPO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3747af81-cf31-4a05-b2b6-c286fa975f6d">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1cbff9cd-1315-489f-afa8-aa4ad3bc82ac">
+                    <TableID>DW_DIM_GRUPO</TableID>
+                    <ColumnID>GRUPO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="954d2cf7-8985-4f54-9438-1115974650ca">
+              <AttributeID>ORDEN</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="65de29a7-c9de-4267-9455-e71a36356236">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a20eab23-1f89-4293-b966-daa19959fc38">
+                    <TableID>DW_DIM_GRUPO</TableID>
+                    <ColumnID>ORDEN</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eb1209ae-62ec-4b11-95a2-075b74386b24">
+          <CubeDimensionID>DIM INTERNADO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f4a94af5-0774-4248-84e1-71b825197ee0">
+              <AttributeID>ID DIM INTERNADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb15191e-faf8-4b4b-8afa-ee4a1b58819f">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ca309113-f797-417e-9d3c-0ab0f44aa9e6">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_INTERNADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="c2d64bab-f163-424a-afc1-4cf567e1fc17">
+              <AttributeID>INTERNADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c6cd803d-2283-4f96-a15f-1dc9e79f123c">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="243a7f5a-ada0-4083-baa5-d16ec1bdb857">
+                    <TableID>DW_DIM_INTERNADO</TableID>
+                    <ColumnID>INTERNADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="34bb7b76-c5f7-4315-89b9-cd110d2e0316">
+          <CubeDimensionID>DIM JORNADA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="06c7f450-f32f-494a-87b6-8a791e76fff4">
+              <AttributeID>ID DIM JORNADA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f5801160-693c-40af-a6fe-ed69eaa779d3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="59f7c715-4f06-447d-bca3-67d8fdb90355">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_JORNADA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="066a3ce8-435d-45c4-80b6-5a34be31374b">
+              <AttributeID>JORNADA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="18647ba4-a6c9-4ad1-b12b-ff6dd50307a4">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ab335fb5-e3d5-4a71-be7a-97ce2218e243">
+                    <TableID>DW_DIM_JORNADA</TableID>
+                    <ColumnID>JORNADA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="727cff79-9d74-424f-bba2-745f01e3ab06">
+          <CubeDimensionID>DIM MODELO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2560f2a1-e82c-4f23-8f0d-4fb2e5cdb5ea">
+              <AttributeID>ID DIM MODELO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5890e8d8-e109-429f-998a-73be1d3a2954">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="473d90dd-da4d-47cb-abdf-545f04fe0495">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_MODELO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="77fa3254-19a0-4783-bd7c-53d207462c17">
+              <AttributeID>MODELO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5b0a6650-242e-4fbd-b1ec-6ff019d86a1e">
+                  <DataType>WChar</DataType>
+                  <DataSize>60</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3681dc0c-0dfb-4cdf-8fcd-54a6b5faf4f9">
+                    <TableID>DW_DIM_MODELO</TableID>
+                    <ColumnID>MODELO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="637224e8-1752-44c1-996d-c5670313f59f">
+          <CubeDimensionID>DIM SECTOR CONPES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d7c05338-11d2-42cc-a48d-79357f4dc76c">
+              <AttributeID>ID DIM SECTOR CONPES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2428cda8-6eb4-45db-a5d4-f527a8d8bfc1">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2881407a-ff52-4fb1-b5f6-a62d6343683e">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_SECTOR_CONPES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="0f598377-4a19-45eb-ac43-928559ffd117">
+              <AttributeID>SECTOR CONPES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="01b6be0d-5254-42e6-a383-e7c74efc2523">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dad072fb-d42c-45f7-9c37-c0de3d2880c9">
+                    <TableID>DW_DIM_SECTOR_CONPES</TableID>
+                    <ColumnID>SECTOR_CONPES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6e3f1dfd-0b64-4f1e-b7c6-e9d8424854fa">
+          <CubeDimensionID>DIM SEDES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="44c0a472-5592-4b35-8cca-e5c9d9be4880">
+              <AttributeID>ID DIM SEDE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2a01612b-755a-4998-a5c6-691040675a9d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1cd520c8-9446-4e96-9474-d10a137ff318">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_SEDE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="6ddd6155-dd5d-4071-bfd2-77995cc98215">
+              <AttributeID>SEDE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="789b6c1f-11bb-47d8-bfb9-86e58d29484e">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="12b26be3-9550-4f99-9990-3beea34c214a">
+                    <TableID>DW_DIM_SEDES</TableID>
+                    <ColumnID>SEDE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="45e9c674-4bd2-4e84-8568-ac3b0f118b4f">
+              <AttributeID>ESTABLECIMIENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fa15db49-36de-4f3b-9104-27c8820b3320">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="482fcebd-0d61-4d19-83b3-3c55b6d43560">
+                    <TableID>DW_DIM_SEDES</TableID>
+                    <ColumnID>ESTABLECIMIENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="14e0d419-b545-406a-be39-838ef786c40e">
+              <AttributeID>COD DANE SEDE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="eb725d74-6d4b-43c7-9323-9d23b01dc6bd">
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b2a3ae05-78ec-4f8c-aa4d-ef5a57596812">
+                    <TableID>DW_DIM_SEDES</TableID>
+                    <ColumnID>COD_DANE_SEDE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f6b739d0-6a36-4538-b9ea-764341c410c1">
+              <AttributeID>ZONA SEDE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="961147a5-c007-4dc7-93ac-80a81fde0332">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="505d79b0-1f48-4f55-8caf-36fd64665d8d">
+                    <TableID>DW_DIM_SEDES</TableID>
+                    <ColumnID>ZONA_SEDE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="29e286f9-9e84-48c5-bdc5-7135eeef70b6">
+              <AttributeID>MUNICIPIO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7ca6d46c-b261-44fb-b8a3-1c3aed64e6cc">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eaf8bb5d-68e8-4d0e-9b82-89135f4b1057">
+                    <TableID>DW_DIM_SEDES</TableID>
+                    <ColumnID>MUNICIPIO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="7761140e-0c53-4eec-accf-381eef8eb0b9">
+              <AttributeID>DEPARTAMENTO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b8215bc4-8842-4f36-bb58-eba15b824113">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed166b3b-f782-4237-9b23-3e37094bf72a">
+                    <TableID>DW_DIM_SEDES</TableID>
+                    <ColumnID>DEPARTAMENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="f44e21d6-8380-46d9-9e4d-09568c5ca892">
+              <AttributeID>ESTADO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a1073f68-d577-4728-9510-15aec439e9fd">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8e6b1e05-67e6-4722-bcc7-9f377a9fb162">
+                    <TableID>DW_DIM_SEDES</TableID>
+                    <ColumnID>ESTADO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="916b5788-4ab6-4384-84c5-13c4970fca51">
+          <CubeDimensionID>DIM SISBEN</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6b20344f-2eff-43ff-befa-69806b69df22">
+              <AttributeID>ID DIM SISBEN</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="66b3b1e0-8275-4cc9-85cf-cec1607021b3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="edc24632-7187-4da8-8012-8f72d8a3cd28">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_SISBEN</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="62807635-747a-4380-acb7-eb62973915b1">
+              <AttributeID>NIVEL SISBEN</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1e320490-a41d-4ef3-b380-fdd41cf05dae">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9321df62-7e9a-4868-aab2-94110ebac18b">
+                    <TableID>DW_DIM_SISBEN</TableID>
+                    <ColumnID>NIVEL_SISBEN</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fce5cf67-f3c2-42a6-ade1-41a6354b2506">
+          <CubeDimensionID>DIM TIEMPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4471d24d-1cef-4afd-819e-cd56175306a3">
+              <AttributeID>ID FECHA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5f4d977b-fbfe-4e4c-bd31-0f21f59052a7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f5030eae-cd3c-4e22-a58b-d751b62fb76f">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_CORTE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="c58e094d-c809-4fdd-8eda-7eb820b86bab">
+              <AttributeID>ANNO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="67eb74d6-beb0-45d5-b3a3-17cd0df90701">
+                  <DataType>WChar</DataType>
+                  <DataSize>4</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="38b5fe08-7bab-4239-8317-3884b3f90494">
+                    <TableID>DW_DIM_TIEMPO</TableID>
+                    <ColumnID>ANNO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="c5bc6d41-d71f-47c2-90ad-715e0b2f1632">
+              <AttributeID>MES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="30989a6f-dc5e-406d-ab0a-245059f81e09">
+                  <DataType>WChar</DataType>
+                  <DataSize>2</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1a1d2ceb-f390-4cac-83db-42785ede1be3">
+                    <TableID>DW_DIM_TIEMPO</TableID>
+                    <ColumnID>MES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="3ef93db0-8883-4f13-ae4c-3692a1eee5b5">
+              <AttributeID>ANNO MES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9e65b11-d86d-45c5-b46c-a89e759b9dc2">
+                  <DataType>WChar</DataType>
+                  <DataSize>10</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="93dbd56c-8a39-48d5-a537-5e5c12f275b4">
+                    <TableID>DW_DIM_TIEMPO</TableID>
+                    <ColumnID>ANNO_MES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute dwd:design-time-name="063d268e-af2d-417b-b47c-1c4f9fa62e73">
+              <AttributeID>NOMBRE MES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b3869e1f-649b-41c4-9ca2-279d68d3ca5b">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e6a0a862-23b2-4973-9a42-32daa0942174">
+                    <TableID>DW_DIM_TIEMPO</TableID>
+                    <ColumnID>NOMBRE_MES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5edea0d4-aa73-4840-a67f-a7be09d1abf6">
+          <CubeDimensionID>DIM TIENE DISCAPACIDAD</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9344f569-25da-4f16-9236-f9c4f44db2af">
+              <AttributeID>ID DIM TIENE DISCAPACIDAD</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2e113bac-e3f6-45e9-9540-c924faf97b71">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="936663b0-5b50-4e8e-aa7b-25ba7a694ad5">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_TIENE_DISCAPACIDAD</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="b3b98260-ed13-461f-98b0-c35490d41248">
+              <AttributeID>TIENE DISCAPACIDAD</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9bd03e5c-5a70-4502-ac67-64be1de390d7">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f27d6914-2bd9-4e5d-b368-29443c9195b3">
+                    <TableID>DW_DIM_TIENE_DISCAPACIDAD</TableID>
+                    <ColumnID>TIENE_DISCAPACIDAD</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9b952f74-38d7-4fc1-a396-8c2bfa03f516">
+          <CubeDimensionID>DIM TIPO DOC</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="376aa7a3-67f9-45fb-8489-5c04d664a252">
+              <AttributeID>ID DIM TIPO DOC</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8aaa451e-eddd-45ee-801b-fcc6cd0b53ab">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ba5d58f-a3d4-444e-b2c6-ce4c38133629">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_TIPO_DOCUMENTO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="fa5dfdaf-6cd8-454b-9640-3e8ab5fe662a">
+              <AttributeID>TIPO DOC</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a4cf5c51-8bff-4d6d-a8ab-8c460b510999">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e4f1596a-1623-4135-8a82-ebe696cdec82">
+                    <TableID>DW_DIM_TIPO_DOC</TableID>
+                    <ColumnID>TIPO_DOC</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4f3aaedb-a06e-4374-9313-0d615eeae767">
+          <CubeDimensionID>DIM ZONA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3126b111-977d-4bc3-a9d1-9fdb00fe6fb1">
+              <AttributeID>ID DIM ZONA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="eba3d602-3eb9-46fd-b1d9-18ec02ec8fe5">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="37486061-6af8-4814-8765-3011ded279e9">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_ZONA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="d894e851-d439-447d-a56d-e1fc2a0b84ed">
+              <AttributeID>ZONA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4e69e431-070c-40fe-ac8d-b847f9fc0e90">
+                  <DataType>WChar</DataType>
+                  <DataSize>255</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fa41a066-8eac-46de-89bc-d44fd29e7cd8">
+                    <TableID>DW_DIM_ZONA</TableID>
+                    <ColumnID>ZONA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="35116f53-1e94-4c76-9f7b-b602c3c5a68a">
+          <CubeDimensionID>DIM PAIS</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f277cb2-74d7-4221-bc7b-9f8e88f29487">
+              <AttributeID>ID DIM PAIS</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e019693d-0a0f-4193-a268-e8171edbf66c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f6f3ce4-2257-452c-8899-818b81119b6f">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_PAIS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="fd4487a7-81ab-454e-acde-a1436cae09c1">
+              <AttributeID>PAIS</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0f767472-2bed-4376-8c59-f63b0564007f">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8a4886ad-d1fb-4bc4-b605-d0a70203a6a6">
+                    <TableID>DW_DIM_PAIS</TableID>
+                    <ColumnID>PAIS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5d0ca937-3c6c-4281-ae1b-3c21ce358412">
+          <CubeDimensionID>DIM SRPA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e6f62c8e-90cf-4995-acdc-d2a067fcd945">
+              <AttributeID>ID DIM SRPA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7356b170-3fb9-4602-9d8b-944d232da91d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cc557111-430b-4246-adfa-b37868426e82">
+                    <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+                    <ColumnID>ID_SRPA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute dwd:design-time-name="d52d517d-7a60-491c-b5b9-b67320974290">
+              <AttributeID>SRPA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b3101b2f-9157-4244-8a5f-413f21868631">
+                  <DataType>WChar</DataType>
+                  <DataSize>50</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="08009241-f5e7-498d-a9cc-b3b9a5b74eb0">
+                    <TableID>DW_DIM_SRPA</TableID>
+                    <ColumnID>SRPA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="b6097d75-5f94-44ce-9114-8bd8d1576b95">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ab5e4237-98cb-4276-82c9-2256836e631f" />
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="4d9a550f-ec1c-4088-9645-95bd6a0e8ba3">
+    <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+  </Source>
+  <ProactiveCaching dwd:design-time-name="76b4e272-93e1-468f-9314-63d9531c68c8">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="97aadc67-250f-4d1a-903c-5f1c26bea5e9" />
+  </ProactiveCaching>
+</Cube>

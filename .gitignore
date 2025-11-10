@@ -1,4 +1,63 @@
+# Virtual Environments
 /venv-data-2/
-*.csv
+final_project/venv_final_project/
+
+# Data files - General
 COVID19 COLOMBIA - Complete Dataset DEC-2023.csv
+
+# Data files - Raw datasets (large files)
+final_project/datasets/*.csv
+data/*.csv
+
+# Data files - Generated/Processed (can be regenerated)
+# Uncomment if you want to ignore these:
+# final_project/data/processed/*.csv
+# final_project/data/bi/*.csv
+# final_project/data/interim/*.csv
+
+# IDEs
 .idea
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Models
+*.pkl
+*.h5
+*.model
+*.joblib
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Dashboard cache
+final_project/dashboards/.cache/
+final_project/dashboards/assets/.cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Claude Code
+.claude/
+final_project/.claude/

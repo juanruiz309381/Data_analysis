@@ -1,0 +1,1222 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f3f70e4a-40bc-437e-a438-adaf1fc6f59c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>INFO_QUIERE_ESTUDIAR</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 ABRIL</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ffd175f4-2f16-4d9f-a5bc-aa2180387357">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 ABRIL</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 ABRIL</Name>
+          <CreatedTimestamp>2019-09-16T16:07:41.753333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.04Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.706667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ab06785c-48fe-41ac-aa58-c429c1afc9ec">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="8be41106-2e60-4dbe-ab33-39e56f230ee8">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="8ad1e1b5-4035-47a5-aa0e-13e0f86488b7" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="fe778d65-f7c5-4cea-88d9-5d8e6d319de3">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2019 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-09-29T03:13:55.246667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.103333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.376667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7bfab095-2fe6-4f10-8da7-c02bbe6d90fe">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2019_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="81dcf8d4-0b8f-445a-becf-d491e6dc3f1c">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f33c522b-b0c0-478c-a1e2-b53ac8afa3ec" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="a02c0ba3-82fb-4226-b8ba-326ba778ea13">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 ENERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 ENERO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.276667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.15Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.956667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a652c6e9-e02c-47de-bbde-4a74ee4d91f5">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="01f29290-3361-4b53-bc6f-89bcc34e61ec">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="43d1fbea-89eb-4793-94cd-0785f0ca938b" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="9ef8c8bb-cffb-4ed9-9f4b-18d374740554">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 FEBRERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 FEBRERO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.24Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.196667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.113333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="87590cbd-a8d8-45bd-af84-6a228aaf743b">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="bd8bb5a0-e6b2-4657-9dab-275af79aeb3d">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b89ec873-aed3-4ec7-b769-95996064664e" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="5993d5e9-f502-45e7-9e69-91dec31383d5">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 MARZO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 MARZO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.13Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.226667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.953333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3cb860cb-0c41-4d7d-8f63-a953cb58a632">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="8a8eb963-2f7a-482d-a6dc-b90a2ff194b1">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c1e7b7e3-7cc2-41bc-9614-cb4f9f52aa5f" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="2a2802c6-991d-48ef-bbf6-2a2208ab116b">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 ABRIL</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 ABRIL</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.363333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.276667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.266667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8c4e8c44-cf0c-40fa-b5e7-827d47a52f14">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="426f8e4f-87f2-43bd-b78e-1c89a0d420f4">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="98f20d2c-ca35-496c-b31c-25dc029aece2" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="1ce29328-3d66-4889-8d73-390ab38dae23">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 MAYO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 MAYO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.093333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.34Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.11Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c1a33ed9-193d-4eda-82e9-22ca2e7a53e4">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="6bbd8714-34b4-4c13-bc2f-e5bb56624247">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="54e43cfc-4a51-4ef5-9d5d-7afac78812b8" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="4c09930e-858a-444e-be3f-cc950c920c54">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 JUNIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 JUNIO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.163333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.393333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.783333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f408c344-f466-4d32-87ff-3b95c57f5c76">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="88ca2152-bbf0-442c-926c-47f0bb12ce0e">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f0e592f0-3a72-41e3-8034-69c4a94ec9ea" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="2d80257c-c4fe-429a-ae79-d8481213fb97">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 JULIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 JULIO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.203333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.443333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.033333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6fd9b122-d65e-4d60-ba1d-4c1226c3c88d">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="16e2c587-2c31-4b3e-ac2c-fab40ba4ed81">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c0b2c5a9-eb26-43e5-b646-ffd08075c309" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="0b51a0c0-62f1-4c82-9931-41add4af8b71">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 AGOSTO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 AGOSTO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.316667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.49Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.36Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4abd6125-5f0b-43e7-ab27-588ff81b46f9">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="00ce83b8-3fdd-4df6-9d02-cb5ff8511fae">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b2d3dc56-0126-417d-af20-3ed538ae7e84" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="35129afb-032e-44a2-9046-4afd3c43551b">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.973333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.536667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.86Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cf0a2b5d-a4b2-4c41-b495-cb8c2e5150a9">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f8938c0e-b8e7-4f52-88d4-6d099d8f1cab">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="babd89c5-1f2b-4a6d-839f-6cb941d21401" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="016c39ce-cea4-45b1-bce4-f4e02247381a">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 OCTUBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 OCTUBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.016667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.583333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.58Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dfb5a514-8f40-4741-a77a-5a31bdd73b0b">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="5d4dbd6a-c7b4-4125-b923-e131c2b7b1f7">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5535762d-046e-4bfb-a89c-9db500e38752" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="34b6f460-e110-4cf4-95f7-bf3dd5819891">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2020 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:48:01.053333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.63Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.3Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f8a972ef-4f45-4c5c-a8e9-67e6560aea6e">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2020_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="730447c4-6450-42d0-9620-f643a647c145">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="3692e23f-b92d-457e-a522-6c3111f3cb11" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="fb82366b-340c-405e-a0e2-29bc9c9014c0">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 ENERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 ENERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.096667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.66Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.69Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1a1fb600-eaf7-4756-afda-ac48f709e974">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="76d57eb6-c72f-4909-b93e-4ff123face8f">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="39dcdb36-d306-41df-90e6-0143e2fd2b84" />
+          </ProactiveCaching>
+          <EstimatedSize>1251204</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="7037072d-7901-4e8e-987a-64590f35197d">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 FEBRERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 FEBRERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.113333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.706667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.926667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1f15d258-8f34-4e69-aedc-2f07686a53b1">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="ed8d61b6-1350-4f97-bced-0165e9b98e55">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="6a34c01a-e869-4bf8-87e0-bb924f715728" />
+          </ProactiveCaching>
+          <EstimatedSize>1339229</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="37ff0519-7274-44b4-9e08-06d7162edb0d">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 MARZO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 MARZO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.143333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.753333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:40.026667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4a1ea89f-5fa1-49f5-98fc-8de675ba0959">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="9dbafa68-1bf0-408c-ba92-902248e161c8">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f67d41d2-d8fe-404d-8897-ecac92f76e4f" />
+          </ProactiveCaching>
+          <EstimatedSize>1721832</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="60ea737e-b7a5-43b5-98ea-0452a106fb6f">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 ABRIL</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 ABRIL</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.176667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.803333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.483333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8b86faff-7181-40b2-b0e4-34557eb33913">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="51a0013e-83c2-4832-a195-5f4746cd76a8">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ec50fe74-e459-4bb4-ab87-dcf61895ae8f" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="2abd775c-e351-4d0b-8ee0-81d00d757c93">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 MAYO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 MAYO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.19Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.85Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.72Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="eec8a7cc-1e72-4f87-8aad-4ce93f2dcf6c">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="0547ce0e-71b2-4c20-93f0-2036e7d53514">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f04021bd-d787-45e0-bf4f-9d6f4d24d78c" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="6a97ab88-6cb7-4f18-9133-a5c9417f32b3">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 JUNIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 JUNIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.223333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.88Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.47Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6772ce58-6092-4c30-ab3a-7640c630ca6f">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="ae7685bc-0e90-4843-ae9c-e8b90511125f">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="828b209f-85ba-4015-a6cc-21a2e7e5e5d8" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="a3f9d613-d31c-4409-b2a0-643913256b2c">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 JULIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 JULIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.253333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.926667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.173333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ad020cb9-5ed6-4775-8f87-8ed489f06cb8">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="6ec5f2c7-59cb-41bb-9c1a-9e8486ec1592">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d8bea828-5e88-4782-a598-f78cf00e02f4" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="1f323da7-8108-4ba8-9c7a-e3cc9517c260">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 AGOSTO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 AGOSTO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.283333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:39.973333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.016667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="12fe6440-58a1-4869-990c-df6df800fe1d">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b974bddd-aa76-4f04-8832-cfa7f9729cdd">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="88ba1b1d-7079-429d-86c7-8cfee40feeed" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="f9f50c96-1f07-4a63-ab12-630bcdeae194">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.316667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:40.02Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:38.206667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="632700cd-59d5-4c23-97f7-48f548f08f44">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="db0d5328-ff9b-4a55-a593-eeda9a71c34c">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b6b2d73d-433c-402e-a377-d7f69ca48e32" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="9999a010-fe99-49ef-a43b-009a6c8ebf50">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 OCTUBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 OCTUBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.346667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:40.066667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:36.923333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="50161ba6-c9f8-45c0-aa36-706158ad4dc8">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="4710e111-497c-4ddb-9c9f-44ec20b2d716">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4c98e56c-d31d-4810-a838-2f1c500efbf9" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="1c7fcab7-7ae2-4222-8a0b-54e51bcc067b">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2021 NOVIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:10.38Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:40.116667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:37.58Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f221c56e-4376-4f69-9349-fa2588a294c7">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2021_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="d55c43eb-e194-43ed-a05a-a7dbc6d0468e">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b8043041-a913-41e3-8095-54bce9b18647" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="73104118-ef75-43fc-aed5-d1d88be64a31">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 ABRIL</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7afd1cfd-7600-4f49-aa92-8b5d9edc5a05">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="4524e8fd-142d-4d25-92d3-4225869dac05">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 ENERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="81aa4f6b-b010-4a06-8fbf-b62b5f8d272e">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c37bbb52-a9c1-432c-9708-b397e8c0480c">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 FEBRERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e0e1f848-d450-4a8e-98ae-a790f9be219b">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="09ab5338-73df-4748-ae68-1f053ba1d9e6">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 MARZO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="57810e5f-cb1c-4d07-a39f-45a43045e3a5">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="d1c417f8-9a67-4914-a5be-a6967a65592a">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 MAYO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="80a3561f-5cac-40d9-acaa-eefef400250f">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="75ef3380-e114-4e2b-824d-4fef196ea960">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 JUNIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e3949d21-19df-483c-9afd-7da79df149de">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="141eecc6-4e45-41d4-bf00-23aa35123c3e">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 JULIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e058bb95-a7e5-4aff-8c17-c28f15ce7cfd">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="238bd0bb-7c9b-4e26-8d6a-bef2d6465a1f">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 AGOSTO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="adea48de-df5d-4f7a-a90a-49f51b94c461">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="406ef792-81ba-4b8a-a0a4-3dcd604eae35">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1f22ea63-e06a-4da3-809c-a81a393a169a">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5a23f457-4fa5-408c-b631-18adc43ff071">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 OCTUBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74a02da2-acd3-462f-8859-5838eda1210f">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="16f6c340-3022-4165-9254-9718ec36938c">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2022 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1b2af579-fd50-4b88-9b53-39806c2907fa">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2022_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="78af978a-05b2-40a9-815d-0b9e1eda2654">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 ENERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e2c576cc-8916-4b05-a322-c4c4409400ad">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="1e60444f-277e-4116-8995-9fe400f83512">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 FEBRERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="26b55cd4-85b2-40d8-b44e-c64a62d2ce86">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5e2bf924-092e-4881-b4f4-3ee9ea0f8a72">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 MARZO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6048cdb4-b41f-4c57-b54a-557568d852e3">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="b2d967d6-0223-4e7b-ab50-a5dc6e4609fb">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 ABRIL</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="26653cad-caea-439a-8f03-486660a5bd1d">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="16a27412-de92-4a1e-8834-4fd74e700369">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 MAYO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="11008139-a9ea-471c-979c-fefe8407167e">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="72da2365-a90c-4911-afac-911b92a649f6">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 JUNIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="93ab2df1-39db-4e37-a692-c395b38d7c02">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="20000f53-5495-49f1-bd30-3a55d2486bfb">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 JULIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4d70788a-2d08-47c2-8256-749a7bdae0d6">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="8072f7ec-3cdd-43c3-9a1b-d2b1dd32c0c7">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 AGOSTO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="420f740f-7a63-426b-9b6e-ead214c81943">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5dfca754-f847-4beb-89d6-97afaf92f34d">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="88ac86b0-ca19-4072-b0a7-aa67b628a35e">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="2f16d888-9337-41d2-bd1d-0d471d04d706">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 OCTUBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0565cf35-41c4-440f-9dc6-936896b40c0d">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="7c7d50e2-9f37-47d7-8051-ad2cb693fcc5">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2023 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="67fb36be-6e8b-42b9-9c2f-bd5892457a21">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2023_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="33c7994c-b307-49b5-909b-cc88168eebc4">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 ENERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a34c6b64-fd9f-48db-8536-55fa011e4479">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="1e3f0aeb-499a-4f38-85c1-85a4e110867b">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 FEBRERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="37e50212-4ceb-43ae-8e6a-b732b56fa4bd">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="a482d04e-8701-45e3-b6b8-3d6614028c62">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 MARZO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d64de045-e776-4ebf-8b56-9ecb27a3fe5c">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="93d54e13-c7b8-4b5c-8876-c52d32cfc96e">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 ABRIL</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a90edc3f-e854-42e8-a78a-80906b2b4cae">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="cf6d8010-71d8-4ffa-9261-8229d52b434b">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 MAYO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f00304c7-c239-43ff-af85-3df9104d76f0">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="1b073f2b-bf75-46a6-9fdc-85ff2cc16c27">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 JUNIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ba19321a-48c2-4f28-b0c1-81607064755c">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="d072fd8d-2366-4b3b-abbb-fb5cb4727392">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 JULIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d205fd0f-a0ab-4476-8c9f-64c4df784a91">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e2064297-5dd3-458b-86c2-4f6eb1b7b34b">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 AGOSTO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="29599aa3-8272-4430-9c2b-1563f641dac7">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="ce1423fe-fd29-48ea-b63b-f42639bd164f">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e3c3052e-4419-4e88-b083-c1a72ae6920b">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="dcac58f9-d7c7-45df-bab8-c91335556a41">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 OCTUBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8b2875e9-6ba6-4183-88c1-8f5ae6096fa2">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="dd156e60-0696-4a80-91a4-c9b084c87a1b">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2024 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9594bd2f-1cc3-4cb1-ba03-15cb497dc2f8">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2024_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="b2a195a6-5990-4b26-bd18-014452a34225">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 ENERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dae243a4-35cd-43d6-9ea9-9b156a260bd9">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="609ffc2a-8229-4685-aa3c-71ca84284070">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 FEBRERO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4020c632-99ea-4dbe-aa1a-956c01ab97c8">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="f632b25e-ef4e-490a-a5e2-e587e8f593e2">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 MARZO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="96fb4a6c-8080-418c-a3f5-848fa40d4e32">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="cb1151f3-d1d8-45c9-8f4a-cd49d8c30a9a">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 ABRIL</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="270de932-a1a8-4c2f-b8ee-cb5c6fc4f50b">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="a0304aca-a1c2-43cf-aeac-6fcf47260c20">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 MAYO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="665d11b0-0b37-4c55-ad1a-f39fe12c6d88">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c89ec943-d9c1-4029-a520-6a3dcfa531e0">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 JUNIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="45b7d9b2-eea8-470c-b95f-e1b243a5f38b">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="7f085294-3205-4b77-ad10-2c411b1a4fb8">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 JULIO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8af9f817-b12d-44eb-b35a-0b6f117e83b1">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="3eb7fedf-4708-4db9-ade6-7c67076471e1">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 AGOSTO</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="27d8345e-da54-40d8-b055-87eefb539974">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="3387d93f-bec4-4bc2-9484-c146dd41843c">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0744779d-cdca-4f70-8cbe-d655069a6891">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5045292a-71fb-4740-a262-379ae292d9fc">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 OCTUBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e982e1bb-bd08-4334-bbb4-4bfe0907df61">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="b59652a7-5aaf-44e1-ae4c-8feca7d5221a">
+          <ID>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO QUE QUIERE ESTUDIAR 2025 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="116c6083-6e43-4dfa-913d-9d6fc405cb6b">
+            <DataSourceViewID>DS_QUIERE_ESTUDIAR</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_QUE_QUIERE_ESTUDIAR_2025_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

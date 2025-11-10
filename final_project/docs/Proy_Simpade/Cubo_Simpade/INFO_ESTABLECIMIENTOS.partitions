@@ -1,0 +1,1222 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="793864c1-357f-4cc0-8800-6653d5faa634" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>INFO_ESTABLECIMIENTOS</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT ESTABLECIMIENTOS 2019 ABRIL</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4d88e5b7-01e6-4080-a4c3-107c0a5bba17">
+          <ID>FACT ESTABLECIMIENTOS 2019 ABRIL</ID>
+          <Name>FACT ESTABLECIMIENTOS 2019 ABRIL</Name>
+          <CreatedTimestamp>2019-09-16T16:07:41.27Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.113333Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.416667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="953650ca-fba7-4c24-bd17-c2e8843016e9">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2019_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="0a445502-60ec-4855-aaaa-afe576f814cf">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="2c7107be-dd34-44a2-ad73-aa5eb523a59f" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="7f98578d-1046-4138-8ded-c6ac0d091d2a">
+          <ID>FACT ESTABLECIMIENTOS 2019 NOVIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2019 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-09-29T03:13:53.496667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.146667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.493333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9309bc83-2c03-4ec3-95ef-b224922963a8">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2019_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b0996a84-8944-4c57-8434-4dc6d6ac5b34">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="10c52d8d-41cf-469a-a8db-ddf1c48c5490" />
+          </ProactiveCaching>
+          <EstimatedSize>947227</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="11d9320e-8eca-41df-9e99-ca871f8d5081">
+          <ID>FACT ESTABLECIMIENTOS 2020 ENERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 ENERO</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.236667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.206667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.04Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d586ca8d-a7b0-4db1-850a-82c86b2f26ff">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="7df2fd47-7993-4b29-ac12-2e08044d9ed6">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="0079960f-d619-42f5-9553-8f1dd28cdc4f" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="18c81c56-9a86-4020-afff-f5f2e7b05150">
+          <ID>FACT ESTABLECIMIENTOS 2020 FEBRERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 FEBRERO</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.203333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.236667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:17.706667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="995c5af4-9328-4fb8-acb7-ccfb900d1ebf">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f737919a-6e65-4e62-9096-95b1d475ab24">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="53ac57b4-346d-46af-bb47-1d3c1095f8ee" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="3a08c08f-a254-4bfa-b00a-53150a616c54">
+          <ID>FACT ESTABLECIMIENTOS 2020 MARZO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 MARZO</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.106667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.286667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.213333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5017b18f-a23a-46e2-9349-669298822e69">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="eb9eb50a-55f7-493d-9b10-60b2cb8befa9">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="e5fe00c0-3f4b-4002-baa8-fc8fd232a886" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="a31960c8-ac19-4e59-bb9d-0278639bcbc6">
+          <ID>FACT ESTABLECIMIENTOS 2020 ABRIL</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 ABRIL</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.306667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.316667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:17.993333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3f0ad544-d69f-4ff0-945c-714d185a75fd">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="c32a6b25-385b-46b1-a466-b1b5087d71ce">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b13a46cc-d489-4412-bc0f-2b2a7590d212" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="e5864d7b-6a6b-467e-9b3c-48fb43a79951">
+          <ID>FACT ESTABLECIMIENTOS 2020 MAYO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 MAYO</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.073333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.363333Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.37Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="442eac6f-5e32-4fe0-8596-fe627693f66e">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="2117310d-9dae-405a-b6cf-5b139299d5ca">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="e6ee50bf-bd95-41c8-84b1-a5cae939d4e2" />
+          </ProactiveCaching>
+          <EstimatedSize>947191</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="10da72ff-8162-4a1d-b612-75e1c011e55e">
+          <ID>FACT ESTABLECIMIENTOS 2020 JUNIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 JUNIO</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.136667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.41Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.963333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5ecf03f0-6091-49a2-8a5f-7dff009a2bf3">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="d8823fb0-174f-499e-b57d-d0b329d5c4c5">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="bfe58bf2-d8f5-4c46-b41c-deb26a9fc546" />
+          </ProactiveCaching>
+          <EstimatedSize>947477</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="89862312-f6da-4dd3-9580-305fec7e3fc1">
+          <ID>FACT ESTABLECIMIENTOS 2020 JULIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 JULIO</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.173333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.456667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:17.773333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5ae08131-39e5-498d-9b82-3838236d745b">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="446af84f-ef24-4e04-b6b3-646eb73e8c6f">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="aeb1a986-7723-41bb-83d4-1fd8d4c42643" />
+          </ProactiveCaching>
+          <EstimatedSize>948501</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="6a6d158f-a39b-4dd4-991a-abb15dd445eb">
+          <ID>FACT ESTABLECIMIENTOS 2020 AGOSTO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 AGOSTO</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.27Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.503333Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.29Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9f6fd713-6bec-4f71-9d87-ce3a6c51f0f9">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="093d79aa-d790-4f2a-8caa-bb07c6234f97">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d999f5bb-b544-497e-95ed-13465abe57c1" />
+          </ProactiveCaching>
+          <EstimatedSize>948834</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="dff3d0a8-f85e-4264-8221-ee33af18e2b7">
+          <ID>FACT ESTABLECIMIENTOS 2020 SEPTIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:47:58.973333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.55Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.353333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f0f4b09b-3038-49cd-8abb-f2df3062c8e6">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="a633318c-cdfe-4073-bcc1-ae5ea31d814d">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b7f4fa8d-b292-4870-9712-d2e58646063a" />
+          </ProactiveCaching>
+          <EstimatedSize>948834</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="8ddb106f-c88c-4043-beae-6311d2f4d20b">
+          <ID>FACT ESTABLECIMIENTOS 2020 OCTUBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 OCTUBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.01Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.596667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.226667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dde9ab2f-90e4-4e75-94e9-dd0542aa16c9">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="9af9f88e-2d4d-40fe-8b3b-d8f1fd7c3055">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b5215d7f-5644-41e3-b328-11d2c317350e" />
+          </ProactiveCaching>
+          <EstimatedSize>948876</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="b21bcfa2-3c21-45ce-88c7-8d31dc0368a0">
+          <ID>FACT ESTABLECIMIENTOS 2020 NOVIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2020 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:47:59.043333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.646667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.386667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ac6e2c7c-528c-468d-9537-4dd4a66562ee">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2020_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="3bd78b01-9cc0-4b4f-ba8a-d04f704f41af">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="2b70ff93-fb21-47dd-bcc2-8d8b5638debd" />
+          </ProactiveCaching>
+          <EstimatedSize>949186</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="74669d0f-8ac3-4f11-84ee-22a48ee93380">
+          <ID>FACT ESTABLECIMIENTOS 2021 ENERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 ENERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.29Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.71Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.696667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6baf57ce-6e63-42b7-839b-e8dd8600a446">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="5e25c7a8-d527-4a33-ab76-ff7a2ae4fb3f">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="80295cf4-0845-40d5-a14c-c1e11ff699a9" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="1305c45e-7591-4e3d-ab53-63dd08f8008f">
+          <ID>FACT ESTABLECIMIENTOS 2021 FEBRERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 FEBRERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.323333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.756667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.963333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="07d747f2-8cc4-440e-9e50-5f36c739ed6f">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="6652e81a-bd3b-4112-bc3c-8744c2c70cbb">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d7d3f56b-469d-4797-88aa-bd8ac879954a" />
+          </ProactiveCaching>
+          <EstimatedSize>954503</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="8ef31a5f-e710-4027-884e-613a7aedfe64">
+          <ID>FACT ESTABLECIMIENTOS 2021 MARZO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 MARZO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.353333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.82Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.04Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4785c53e-0bf9-4a61-aa37-199a728a2c38">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="c224fa2a-397c-4230-baf9-5d3e02bdc108">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="39672eb2-e0ee-45bc-88b1-daf466cc62f8" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="52f32723-812d-4b74-97cd-1de7c47fbad9">
+          <ID>FACT ESTABLECIMIENTOS 2021 ABRIL</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 ABRIL</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.386667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.85Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.213333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0afeb70d-caf1-4909-ab74-c2640239c993">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="92972d5b-2d22-499a-ad5a-f8d8407eec30">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f343d288-91ff-4560-9edf-4aefa509a34c" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="2bb38589-eb9f-4029-945b-69735abb93ac">
+          <ID>FACT ESTABLECIMIENTOS 2021 MAYO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 MAYO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.416667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.896667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.54Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="23778c5b-1c5d-438b-8b5a-620f4ecec6c5">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="da0aa42e-045f-4f43-83f3-ba6062d78d7a">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b0dfb89e-7c70-4eaf-8f11-06a1d7b7fa3f" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="03f1b4f2-7e3b-4f62-9256-681929a80e08">
+          <ID>FACT ESTABLECIMIENTOS 2021 JUNIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 JUNIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.446667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.926667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.226667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2c4a3018-649a-4b9a-95bd-4d9beff5fff6">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f3e0e058-bdd8-4d62-8267-e7a64e707074">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="51a1d9d4-8d3f-4492-aa72-847958ad8801" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="80f33c11-ff6d-4065-9603-ad7ff116e139">
+          <ID>FACT ESTABLECIMIENTOS 2021 JULIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 JULIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.463333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:34.973333Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.836667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8e9a9a08-ee6d-404f-8be2-9482cc76246f">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="81d9139f-2f9c-416c-ab34-f4519c77a971">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="170b937f-2eb1-4d07-af6d-edcc1b831864" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="623a6e2b-441c-4397-af5c-8e871e2b7d3f">
+          <ID>FACT ESTABLECIMIENTOS 2021 AGOSTO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 AGOSTO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.48Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:35.006667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.166667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ac567ae6-c8a4-44aa-9f76-5af584702311">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="1c036876-d94b-4e3a-a0d6-14c3ebeb1f59">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="17cc98c0-d610-4eb0-b637-94fae1e196a3" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="527011d8-28c4-4fe2-a53b-26fa66c0dbb1">
+          <ID>FACT ESTABLECIMIENTOS 2021 SEPTIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.51Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:35.036667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:19.386667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a1ac5001-38f1-4883-baad-e7894c86a5b0">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="542713d6-d139-4308-ba43-e37417f440b6">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="956c5230-7681-4d33-81ba-86c999a246a6" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="e3161800-ed06-4580-a40d-bccdf61155fe">
+          <ID>FACT ESTABLECIMIENTOS 2021 OCTUBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 OCTUBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.543333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:35.07Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.226667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7f16689b-1228-444a-866f-5b4796029852">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="59ff0d68-55ef-47a6-bfa3-18165c48b203">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ffeba861-b9d8-4214-9d36-5138c78e28b6" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="6db7c8be-d250-45e6-bda2-871e6ead435a">
+          <ID>FACT ESTABLECIMIENTOS 2021 NOVIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2021 NOVIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:05.573333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:35.116667Z</LastSchemaUpdate>
+          <LastProcessed>2021-12-01T06:58:18.07Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5a9c2f8e-26b6-4be4-b08a-e2dd170e4c77">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2021_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="61ffed94-79e8-44aa-8658-dea191ab4b77">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="f9c789e2-ea28-45c2-93f9-d947cd9e3104" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="4364740a-fabc-41b0-a1c5-ae24a7270bab">
+          <ID>FACT ESTABLECIMIENTOS 2022 ABRIL</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4ca698c1-6e84-4999-9b79-2cd4599fd43b">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="03b44fdd-2b6a-4714-bca8-a7e0bd24a500">
+          <ID>FACT ESTABLECIMIENTOS 2022 ENERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e9b77ed2-2598-4805-97bb-bd3a15e7821b">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="62ef08aa-49fd-4046-ac46-7194c27aebd4">
+          <ID>FACT ESTABLECIMIENTOS 2022 FEBRERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1388e0a4-5274-4d11-a56e-d69d9827a3c0">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="34e49bb8-7ef5-4a89-9cdb-d140206bed96">
+          <ID>FACT ESTABLECIMIENTOS 2022 MARZO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c1e038dd-b6ae-4906-a652-cf5252e0a8c6">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5163d98d-f5c4-4666-8a19-df54f6dbef30">
+          <ID>FACT ESTABLECIMIENTOS 2022 MAYO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="31d891bc-312d-42d3-8dbf-ff1ece57ab73">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="6d305b7b-b277-43f3-8aee-a1c96179149f">
+          <ID>FACT ESTABLECIMIENTOS 2022 JUNIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4b615888-b626-4d1b-af6f-5e4957ade9dd">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e024762f-cb8d-42ec-a8a8-068a08939966">
+          <ID>FACT ESTABLECIMIENTOS 2022 JULIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="023d20fc-d2ff-4960-a960-f6a5f840acdb">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="6e72e1dc-ad01-4520-958a-e96f8200160f">
+          <ID>FACT ESTABLECIMIENTOS 2022 AGOSTO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dcba9072-e9b4-4e4d-8737-05b30b21e59f">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="7702f5f8-3cd9-4f54-8ae2-7b394ff26950">
+          <ID>FACT ESTABLECIMIENTOS 2022 SEPTIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f9223f55-7d3a-4129-995f-dc38166854dc">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="63884240-740b-4587-9167-2a420e508c47">
+          <ID>FACT ESTABLECIMIENTOS 2022 OCTUBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8852040e-17b5-4d6f-acce-26bec95c8ae3">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c709fc25-e34d-4c5f-92ec-03f1c7fa440c">
+          <ID>FACT ESTABLECIMIENTOS 2022 NOVIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2022 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a5ab7515-e837-4367-b458-8953c3af2e67">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2022_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="2cf48ada-f41c-433a-a6a8-9e79cd6b3382">
+          <ID>FACT ESTABLECIMIENTOS 2023 ENERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a9c684a9-1a74-4e41-b877-3c2e0ec0da11">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="b272702b-95e9-45ad-875a-6dea11ff36dd">
+          <ID>FACT ESTABLECIMIENTOS 2023 FEBRERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="795ea1fb-2253-4923-af07-0bcc9b6032e6">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="84e8c2d4-f676-43e1-9cdb-2a12db391bbf">
+          <ID>FACT ESTABLECIMIENTOS 2023 MARZO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bdd81ff2-38be-4136-9330-f16c1368480a">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="2d41a58a-9a6c-4f3e-a57b-3dc0f672181c">
+          <ID>FACT ESTABLECIMIENTOS 2023 ABRIL</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3ed97abd-be58-4fd8-b89b-3bdaa91a5cb1">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="b53c3a2d-4d75-4df9-a02d-322c047bdf5c">
+          <ID>FACT ESTABLECIMIENTOS 2023 MAYO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9d64d497-5e80-47d5-b9c8-9bd26704afc5">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e383188b-5df7-4a17-88e3-9c9a912df8d0">
+          <ID>FACT ESTABLECIMIENTOS 2023 JUNIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ad00429f-a482-4f94-a88e-63c45bcb5905">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="82624d75-c3aa-4793-86c8-cf61c384840b">
+          <ID>FACT ESTABLECIMIENTOS 2023 JULIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="46fb97f6-e816-43b3-81a4-e231ea48579b">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="1f14dbc5-0ba8-474f-be8e-3c84fc9290fd">
+          <ID>FACT ESTABLECIMIENTOS 2023 AGOSTO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c8f2ebc2-278f-4e6e-9581-709d678b242f">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="2771af8a-f45d-4f4b-8216-4672e29caae4">
+          <ID>FACT ESTABLECIMIENTOS 2023 SEPTIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d13add0b-0c10-4ea8-aaba-96a70decaea0">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="d3d9591b-f65d-40d6-9761-6de7c1c01810">
+          <ID>FACT ESTABLECIMIENTOS 2023 OCTUBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cec3fb5b-4c91-4457-89a1-bf68ae29c666">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="98019722-a1a3-4da8-a8ab-a85160f971e3">
+          <ID>FACT ESTABLECIMIENTOS 2023 NOVIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2023 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bd7b1db0-0d5f-4a80-bbb8-c22e92c34bab">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2023_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="7e3ef22d-165b-4c1d-9c73-bfaaaa598eb2">
+          <ID>FACT ESTABLECIMIENTOS 2024 ENERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a678ac1a-112f-4323-977a-30df1c79a6be">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e7a3a706-2ce2-4c1a-b397-99e4f3f454b9">
+          <ID>FACT ESTABLECIMIENTOS 2024 FEBRERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="67dc8a11-dad7-4be9-b79a-a06ad399cbe6">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="b86c2e9c-ee7b-4ce5-9e12-634d70cbc80e">
+          <ID>FACT ESTABLECIMIENTOS 2024 MARZO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1dbcf423-c80b-41dc-8f6a-5af048d6f081">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="6ef6d440-88b8-4f4a-8ebd-76ff0b9e0df3">
+          <ID>FACT ESTABLECIMIENTOS 2024 ABRIL</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b117dfdc-1d14-42fd-a74a-0ed87ec3834f">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="98edb7bb-d36d-40c4-bff5-22f3bc6173c6">
+          <ID>FACT ESTABLECIMIENTOS 2024 MAYO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0b802164-8378-4522-9d50-12f0b5d8f499">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="36e4c2ba-ee43-40b5-a6bc-dce890d53bdc">
+          <ID>FACT ESTABLECIMIENTOS 2024 JUNIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4b4cf848-9189-400c-a5eb-b8291fda8eb6">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="2a008d33-2ba5-4828-b073-15826a84ca33">
+          <ID>FACT ESTABLECIMIENTOS 2024 JULIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="71b739b2-8f71-46f5-8743-bd25a1f22178">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c3ad418d-917f-437a-82ee-eebe41247aeb">
+          <ID>FACT ESTABLECIMIENTOS 2024 AGOSTO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="386eaed0-0028-485e-93b2-5aab4e46ca4d">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="1e5eaeff-0dbd-4fff-9bea-fde9ffd276bb">
+          <ID>FACT ESTABLECIMIENTOS 2024 SEPTIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1ef46327-ffd8-46d4-a13b-3bf02a5fb687">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="66901c05-dda1-42ff-837b-98079a594f1c">
+          <ID>FACT ESTABLECIMIENTOS 2024 OCTUBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="60791236-688e-443a-9e70-eba09a2a0cab">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="59c1988a-79a3-405b-a611-3f22366fe505">
+          <ID>FACT ESTABLECIMIENTOS 2024 NOVIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2024 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8337232b-0a0e-413e-8003-5db8f6f32caf">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2024_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="9882876b-abe2-41f8-8508-1258b4d7a901">
+          <ID>FACT ESTABLECIMIENTOS 2025 ENERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="85827c43-bed4-4a76-8df5-2503d703e786">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="74c4f354-dbb1-497c-8a1f-0d1b8076f204">
+          <ID>FACT ESTABLECIMIENTOS 2025 FEBRERO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1d54df2e-0e35-4483-88ab-2cf2b619b3fd">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="73253b09-9681-4d04-9038-cd38b986b45d">
+          <ID>FACT ESTABLECIMIENTOS 2025 MARZO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1070a30e-e950-4bfd-bffe-9d80e5fb8362">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="93eae6a6-cdbc-45f2-b08a-abc43b460ec4">
+          <ID>FACT ESTABLECIMIENTOS 2025 ABRIL</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2631eb8f-8cb7-4ced-b6db-b553e6966df2">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="57986f8a-9ca8-4b2a-9fc0-12d7a2b223bf">
+          <ID>FACT ESTABLECIMIENTOS 2025 MAYO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="27f86ee7-b339-4596-a498-a14b0c4398b6">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="6945c82d-c06c-473f-9ca3-412e57f9e176">
+          <ID>FACT ESTABLECIMIENTOS 2025 JUNIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="11d138f5-9af9-49ae-b8ad-a232774d2d6d">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="802f2b2b-1777-4b2d-acbf-ff87ceaeab63">
+          <ID>FACT ESTABLECIMIENTOS 2025 JULIO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a6750f6c-65a4-45cb-b268-d7ece9e9353b">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="8ae62e49-fc3b-4a03-bbc7-4bd2c96c5c67">
+          <ID>FACT ESTABLECIMIENTOS 2025 AGOSTO</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a67c8421-b73b-4560-9fe0-7cf6d450dbe0">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="922c51bf-255b-4828-ac19-511efdeb67fe">
+          <ID>FACT ESTABLECIMIENTOS 2025 SEPTIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f7181039-1656-4127-8d6d-5f77bc23be7b">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="ef8fab7e-332d-4448-9a6b-57bd38d577de">
+          <ID>FACT ESTABLECIMIENTOS 2025 OCTUBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7df42ca0-3acf-4f5a-81bb-34399dca87bc">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="a3c5188a-6a6e-4c0d-b7be-d4696ca6bbc4">
+          <ID>FACT ESTABLECIMIENTOS 2025 NOVIEMBRE</ID>
+          <Name>FACT ESTABLECIMIENTOS 2025 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="51d9c881-f159-4fb1-92a6-d81a88a6e86c">
+            <DataSourceViewID>DS_ESTABLECIMIENTOS</DataSourceViewID>
+            <TableID>DW_FACT_ESTABLECIMIENTOS_2025_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

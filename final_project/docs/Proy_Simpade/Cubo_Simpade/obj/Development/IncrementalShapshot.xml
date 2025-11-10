@@ -1,0 +1,880 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Cubo_Simpade</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>ndu+hBfjSXe00zOeTU6nO9U149Q=18/02/2024 5:17:49 p. m.6/05/2022 3:41:17 p. m.</TimeStamp>
+        <ID>
+          <String>DS_SIMPADE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>EEBvzgyIsXrHlTnL1YjWXAKP16Y=29/05/2025 4:06:59 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DS_ALUMNO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>uExRhwQaXscjS40wbsnJn5+9ySU=29/05/2025 4:50:38 p. m.6/05/2022 3:41:12 p. m.</TimeStamp>
+        <ID>
+          <String>DS_ESTABLECIMIENTOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Xb4Gg5rUoTHblxN+fougaASPhnA=29/05/2025 4:57:30 p. m.6/05/2022 3:41:13 p. m.</TimeStamp>
+        <ID>
+          <String>DS_OTRAS_CAUSAS_DESERCION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>V2QcDWqbV+Y28oIHajCgo0/LUu8=29/05/2025 4:58:38 p. m.6/05/2022 3:41:14 p. m.</TimeStamp>
+        <ID>
+          <String>DS_OTRAS_CAUSAS_DISCRIMINACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>EdBtKV7peQYFByM23j606df1E8Y=29/05/2025 4:59:42 p. m.6/05/2022 3:41:15 p. m.</TimeStamp>
+        <ID>
+          <String>DS_QUIERE_ESTUDIAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>fhvaJ0s7CHZjljVXfPGRRFATU3s=29/05/2025 5:02:16 p. m.6/05/2022 3:41:16 p. m.</TimeStamp>
+        <ID>
+          <String>DS_SEDES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gHyUzBG2N6QHQRw1D15MTfrfzNA=6/05/2022 3:41:02 p. m.6/05/2022 3:41:05 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ABANDONOS TEMPORALES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SiVmrZHMVhrCFigeQGIMlsM8WXs=6/05/2022 3:41:02 p. m.6/05/2022 3:41:05 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ACCESO SEGURO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>eThgvuAHaIq6vv7hjRGRM7GjULM=6/05/2022 3:41:02 p. m.6/05/2022 3:41:05 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ACCIONES ESTUDIANTES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GhEDWfpIgnDIXWVhJBSvRBQ/hog=6/05/2022 3:41:02 p. m.6/05/2022 3:41:05 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ACCIONES SEDES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3WHRc154C/ZmTXELH3C+OHdNGbk=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ALCOHOLISMO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EA4wDO3GylvSl/HdCQ9WAvibE9U=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ALUMNO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>L9Wp6aUhAoyDQhLGs70osW4OMwM=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ANNOS EDUCACION PREE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kw13ouFN8dZ0jN2pqC7uHFQi/rw=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ANTECEDENTES DISC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>H/H8eSORTmTc3Mv4vwH5LvdgyCg=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM APOYO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Xh/Bqk62kkmvkW0hAB8tgp8TTv0=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ART EDU SUPERIOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nnD8S/hvxK57K6MaYCZxDdK9Yo0=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ART PROG FORMACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7Boc6liDFC0G/Pi3OI4HpdyqjLM=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ART PROG PRIMERA INFANCIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MPnruYQ2gig4uiO15aExuB5F4BQ=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ART PROG SALUD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8uwbXdgWx1Wne14dTJLmDHzLvEI=24/05/2022 10:07:17 a. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ART SECTOR PRODUCTIVO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AG2Ch+Jehp7zP6j9KLMlSi8Yhs8=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ASIGNATURA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZTLQvs6Fl0bACANplWpZkpNjtqE=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ASISTE BOLETINES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>c8vYeoRe6LMLNqAULaWZ0FJ0cas=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ASISTE REUNIONES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZhzxcZFh4leAuS08MCSb9nTCyXU=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ASISTENCIA PROMEDIO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tX8gJeikvC1a703Znnr/fs4SPp8=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM BIBLIOTECA ESCOLAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HTdfgfR0fq/RgbSzjCqNzIJhJNM=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CAMBIO DOMICILIO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QIlkQrL/lbYPIBtyOmXLYx5OSOc=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CAUSAS DESERCION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gOyhM85KtwQWdb3lsiLtOsVPbyw=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CERCA PANDILLAS VANDALISMO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>kQfD+6t2MWuM04ejwRra7RXygog=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CONFLICTO ARMADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>y9TKaadkO27Oav69Q3UAoN+MLDY=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CONFLICTO COM PROFES DIR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fAJ6d+sdOqTLoNVDH0ofAfnolGM=6/05/2022 3:41:02 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CONFLICTO ENTRE ESTUD PROFES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BjptbcSTrjV8KKgzW+BeV4BeKSk=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CONFLICTO ENTRE ESTUDIANTES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sKsw9T872eFU57WLDmqblkJg09I=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CONFLICTO ENTRE PROFES DIR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/Pa7pdMkB5+kDarrA/0ERkkF7Cs=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM CONFLICTO ENTRE PROFES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sF/qD4HLwGL81mVVRdqdfvPKqHs=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM DIFICIL APRENDIZAJE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ty1O+K8zhwf73o+NM8DtefSp73U=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM DISCRIMINACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RV/GxZMM7raN3GahUiSNfV2+1Z4=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EDAD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RJYiMMsWpqd1uAXgYu7izWo8Z5s=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EDU PREESCOLAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>v2l/US0xATUO8VxvYlJSFM1m9DQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EMBARAZO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fcRTySDhqD/q6s1djTFe0crN1rQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ENCERRAMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xuzjd8JAqqf4kZzgF+WMs5qifIQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:06 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ESTABLECIMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wrSIOlVfgskyEZBoW3v7k1+va9E=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ESTADO CONSOLIDADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>RkgV0xMWG7LgfeCgLRQ3pdkL+aM=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ESTRATO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OZkrQhbjLEI3BtMSutqpNH03h/4=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ETNIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JW4Xm/0tXnFjWOWFIT5376VKEYg=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE ASOCIACION PADRES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>C75WD8y5bDuOtNtxZYHHAh7VWm0=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE BIENESTAR DOC ADMIN</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3mPznglupRCbbyU5cui2Vw42yPQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE BIENESTAR ESTUDIANTIL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>pZ4KE3GrYGP9A0tvPsS1XvQBTS0=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE COMITE CONVIVENCIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>miGjH4VlLRU2JtY/7pnebQVASFU=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE CONSEJO ACADEMICO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YHOqQ3CQ6RXP7ciSmL8H3lTlLTw=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE CONSEJO DIRECTIVO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TX8n5wkT/tSZDvqzJaxgaUWVo6I=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE CONSEJO ESTUDIANTIL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MfV07ZYCq70ZfhPruo7461CBKlk=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE CONSEJO PADRES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>j4Kgk6sSC6upFUgzuyw+PUkV504=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE ESCUELA PADRES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QiVSR0LQmUXtBy0YScO/7hzs3kw=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTE PROFE ORIENTADOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>w8FN5XuyAYVp1rHkKxduOv0poxs=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTEN BIBLIO PUBLICAS CERCA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EailTqWlUjmmxIhy7KmNYEAQ4uY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTEN ESPACIOS RECREATIVOS CERCA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Y+y+5/TY1ne9cUZC9dkRy9D8+0U=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTEN HUERTAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wn4M+3ZlA4XlPdMPdICtEMNQ16U=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM EXISTEN PROBLEMAS ABUSO SEXUAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DXbs+lnzFxu/ySa52N4AsZfXRtY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM FUERA SISTEMA EDU</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aRTQLX1BziOQMQn01kbK4+kSzAQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM GENERO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>wK3QPLvA91LJaW9GP+28tjGTbWY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM GEOGRAFIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0M1YwOfJXqQ0lxnZPjPx2GGvYRE=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM GRADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Bxu76CsPBA85CZM0KQL2hy8u2Gg=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM GRUPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Yovn7axXJf4CemYG3UvFV7g9OTk=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM GRUPOS MARGEN LEY</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>AxI2g2ZZjKKjOsMmdG1bS9sWYp0=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM INFRAESTRUCTURA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QMiG68r+qIno4AKQfu8BbKJfQAg=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM INTERNADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NPcJcLQ+FTws7U25jMsBLmIuAVA=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM JORNADA COMP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0zw3uzJpKwwYcvKjkMAtCItiqRg=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM JORNADA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>n31P6BTGDZNqesmN1uKYwgSetvY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM LABORATORIO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>UEH9bL5K/JnjsvMxZ/1dAiCcDcQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM MAT TEMPRANA EDAD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>O8kGvV30HVKibi0v0iq++2Q5rL4=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM MODELO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>x7l5l1K+upWBdBIwSiNhgpw9GDE=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM MOTIVOESTADO CONSOLIDADO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GlvG3pqzBpMy4L4DVfCSEWAZiKE=6/05/2022 3:41:03 p. m.6/05/2022 3:41:07 p. m.</TimeStamp>
+        <ID>
+          <String>DIM NIVEL EDUCATIVO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/2SH6UCsCYhiNd4kTVV/H4yVLHs=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM OTRA RAZON DESERCION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ymEcfdq8AJw8s7CpAUsksWx+07c=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM OTRA RAZON DISCRIMINACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Io7NoHTX8hh1ZNN2AnCWkDD8tUQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PAIS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Aua3Aa6jGvake72uavQl0psiDiE=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PANDILLAS VANDALISMO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8tIcFWI/E4m3GCKO6E2uIxrYaxU=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PARENTESCO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>g9AzMJjTf8Wv/1fRC4yI8f7tOmY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PERIODO ASIGNATURA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JNeL/1o3l8dHy5xFjL+aTNC7QRU=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PERSONAS HOGAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>81wSUeEsjdvrEFhuI738+qgxTI8=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PRESENCIA FRONTERAS INVISIBLES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>puSmXgbXjOtJYUT0ypI9AqrUyQY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PROGRAMA ACTUAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+BhhbEiRd366OciywuIMXcUZzRU=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM PROPIEDAD VIVIENDA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZjkrH8ie21So0KWqZU7TUyTrZ+c=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM QUE QUIERE ESTUDIAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>j23morQiLQe/BSTMuBGIkwB7je0=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM RAMPAS ACCESO PER DISCAPACIDAD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q9osxKcYS8iQW0CLRTd7X0LlpcE=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM RANGO INDICADOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KVpD9fFYpT86+sm1PFbWlrZnA2U=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM REPITE ANNO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>z7OF7r0naeqXORGLBwGjGqniPdk=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM REPITE GRADO ACTUAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xJ9zeAXd/zujCj+Ad6kYOdbIXKw=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM RETIRO SIN TERMINAR ANNO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+VWLBQykE7MmQNA1mO3l24woRs8=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM SECRETARIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2pFatqxuEoEO+YzKHkDQNRafo2g=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM SECTOR CONPES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lOXxem5npXebpUuv4KXSXuAT4js=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM SEDE MATERNIDAD TEMP</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OoXSvnSq1Nmzk3tebdWfti+Iymc=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM SEDES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OWaqG37EKTioweVn0W51YgB6/qo=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM SERVICIOS PUBLICOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>/BSnJFkvgKiO6X94a9Io52/Hcno=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM SISBEN</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IkF/r5ZT3W0LUY1JFR8ZYkMucQ4=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM SRPA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yU9k5so2BkXlTKjt6p19Q74GzK0=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TIEMPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FQWPJ3U4C0wGJft1IF/Bz8CepUY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TIENE DEFINIDO ESTUDIAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>M3ucb8EdwzrRz3fkMlZiuFZTDVo=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TIENE DISCAPACIDAD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jDwQeoS8H70hce5vpslV0iGNolo=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TIPO DOC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MZEZT8ht0pJlkkSTc1JLtcnM9XY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TIPO EMPLEO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MFlcX/1vJRv24UZdKRDir06D5HE=6/05/2022 3:41:03 p. m.6/05/2022 3:41:08 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TIPO VIVIENDA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2J2CsICRSyE7m00M3YNW7hpTx5Y=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TRABAJA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7bvL5r4EzwjgcEva8woSxvNSRKc=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM TRIBUS URBANAS CERCA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3WxGfKRQawCjfRpY1g37hWO/Oi8=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM UBICACION SEDE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>jPNQYhyNoY0co4M0K1YVzSIRb4w=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM VECES REPITE ANNO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3BYJCfr0C6dGQHvU+2Q4Z3vEGbQ=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM VICTIMA AGRESION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fV7edGXoioiWJQeyJV775UeUiII=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM VICTIMA DISCRIMINACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yfffK2c7G0vc17ficHSvXB+wi+k=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM VINCULACION EDU INICIAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Pi/WxncTl/B72Lr6Y44Ogf0NOTE=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM VIVE SOLO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NvW0dCDjtawSwLXKEaHZzinaTNY=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM VTA CONS SUSTANCIAS EX</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LFE5p6lH5dKJe6B/MhN79o273Aw=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM VTA CONS SUSTANCIAS IN</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>saJebO5BZKAdc90189tCwM/mPbA=6/05/2022 3:41:03 p. m.6/05/2022 3:41:09 p. m.</TimeStamp>
+        <ID>
+          <String>DIM ZONA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>kFfrZ/LLskRD/CHueZuap2RDuzk=30/05/2025 9:26:15 a. m.6/05/2022 3:41:17 p. m.fC16J3p8PRjoqEh+IIxyR8ZV43U=30/05/2025 9:26:15 a. m.6/05/2022 3:41:18 p. m.</TimeStamp>
+        <ID>
+          <String>INFO_ALUMNO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>0FXtMO6f0C5yQyeXCqhoVfrXHbU=30/05/2025 9:29:39 a. m.6/05/2022 3:41:18 p. m.2+eu9wntBtguJcbytXUL0iQFv3g=30/05/2025 9:29:38 a. m.6/05/2022 3:41:18 p. m.</TimeStamp>
+        <ID>
+          <String>INFO_ESTABLECIMIENTOS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Ex6d4W7MN6DJa7T9xXI5Fr5OKsE=30/05/2025 9:40:25 a. m.6/05/2022 3:41:18 p. m.eNVlyb89KTqr1SSyzfbsh2Vt1os=30/05/2025 9:40:25 a. m.6/05/2022 3:41:18 p. m.</TimeStamp>
+        <ID>
+          <String>DS_OTRAS_CAUSAS_DESERCION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>FEuJ4kOFF7DZi1qXRtzzmyobc+0=30/05/2025 9:43:14 a. m.6/05/2022 3:41:18 p. m.Y3/6+xpYZ2D3XFZYon0TrKDHtag=30/05/2025 9:43:13 a. m.6/05/2022 3:41:19 p. m.</TimeStamp>
+        <ID>
+          <String>INFO_OTRAS_CAUSAS_DISCRIMINACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>0hlnrvJQyoJvkQWmbNHnqR9gw4c=30/05/2025 9:45:44 a. m.6/05/2022 3:41:19 p. m.bi+gJ5RVL5jYWYttGDy6uj8okdk=30/05/2025 9:45:44 a. m.6/05/2022 3:41:19 p. m.</TimeStamp>
+        <ID>
+          <String>INFO_QUIERE_ESTUDIAR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>lLmFcPsaJa+QlywIdXQg8xyzSwI=30/05/2025 9:48:15 a. m.6/05/2022 3:41:19 p. m.sYho2FBxjGzjx35DaFSvh15Qdcs=30/05/2025 9:48:13 a. m.6/05/2022 3:41:20 p. m.</TimeStamp>
+        <ID>
+          <String>INFO_SEDES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>6mNfPqKyTKk3eisBpcofPLyZfPw=6/05/2022 3:41:05 p. m.6/05/2022 3:41:20 p. m.</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>LLQTBf4Bx45Y0qy/321qFSlJAeI=6/05/2022 3:41:05 p. m.6/05/2022 3:41:05 p. m.</TimeStamp>
+      <ID>
+        <String>Cubo_Simpade</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-05-30T15:07:46.096667Z</LastDeployed>
+</DeploymentSnapshot>

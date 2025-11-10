@@ -1,0 +1,1222 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f4e656a9-d1f5-4b08-901b-e8846345ec85" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>INFO_OTRAS_CAUSAS_DISCRIMINACION</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 ABRIL</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="321dc41d-80ec-4c53-b445-aa0c5c5d25bc">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 ABRIL</Name>
+          <CreatedTimestamp>2019-09-16T16:07:41.636667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.79Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.763333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e66f38fb-da3c-46fb-8239-c1cec23525d1">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2019_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="d97715d7-4b26-4454-8ed7-41f56c7d3bd6">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="95e860a1-e5a0-4cbc-980b-6d421276cfdc" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="00d365a0-c6e7-472b-b8a7-fb1d5be97709">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2019 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-09-29T03:13:54.903333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.82Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.983333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="39eb60de-bdd9-49c2-aff1-b23fca2e2e49">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2019_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="5f35ce11-2303-4428-9313-39674f8cdf59">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="36828239-acda-4cdd-abdf-e6c801b12b6b" />
+          </ProactiveCaching>
+          <EstimatedSize>773030</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="b0923f6d-1588-41c7-a659-1bfa2bdc2e94">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 ENERO</Name>
+          <CreatedTimestamp>2020-09-29T03:13:54.92Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.9Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.826667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7889c7e1-a733-4a99-bcb1-8d89e9989f4c">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="0b056933-40bb-4658-aca5-c898fbf5581f">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="2753d0b7-5717-4bd9-ad3d-e1eed8b074a8" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="a79d1899-618c-461a-8167-6f9578373feb">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 FEBRERO</Name>
+          <CreatedTimestamp>2020-09-29T03:13:54.933333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.946667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:36.076667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4ed070d8-1dca-414e-ad28-ce50211fa6aa">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="fb982cf8-3a4d-46a6-8968-97aa9ef77fa2">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="317ce3e8-90ec-4fc1-8ad6-5f9205ff3f5e" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="2fc99909-c71a-4f9b-b533-d2d0c67d27f4">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 MARZO</Name>
+          <CreatedTimestamp>2020-09-29T03:13:54.95Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.993333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.39Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4e9819f2-06ec-486e-93f0-7c798e0998a7">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="a17e1b69-5a01-47ff-b38f-93ce65afaa77">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="009a1c39-695a-47ce-89bf-3bc1f7f171e3" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="d98d1d04-0c98-4f09-aa38-32a5aa9685aa">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 ABRIL</Name>
+          <CreatedTimestamp>2020-09-29T03:13:54.966667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.023333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.943333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b754cfd8-f3d8-4185-ae5d-e2b0c07e321b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f8043e80-ef45-44fb-9a2f-3b0b451d7b1a">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="a97e8684-b86c-4e78-ae26-3126daaf4aa1" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="00f111ad-a229-4bf8-8da3-6d9316b64899">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 MAYO</Name>
+          <CreatedTimestamp>2020-09-29T03:13:54.996667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.07Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.31Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="030298ca-659d-47cf-a8a6-02195a8a0ff5">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="c0bac813-d9be-40a4-9b63-6143f5914002">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ae4cf5a3-719b-4737-8f65-f7acd88ab276" />
+          </ProactiveCaching>
+          <EstimatedSize>304215</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="43fa9dda-3539-4323-8ce3-eeeb8772289a">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 JUNIO</Name>
+          <CreatedTimestamp>2020-09-29T03:13:55.013333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.116667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.903333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="43de61c2-2c2b-405c-900d-92d5ec6f1fde">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f8a2ee69-2b3e-43d2-9f25-4a9f56484346">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="35c0873c-862e-4121-984a-d7df1460d4ad" />
+          </ProactiveCaching>
+          <EstimatedSize>332068</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="121c7965-8e7b-4a4e-a8c1-2185d08c8b90">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 JULIO</Name>
+          <CreatedTimestamp>2020-09-29T03:13:55.026667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.163333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.25Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d4e70e21-164e-4a71-b709-6616d102b498">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="2cf3f9c3-aba6-47da-96af-274aa6408ec9">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="cd352089-4cb4-4343-a384-5e6a5b55b06c" />
+          </ProactiveCaching>
+          <EstimatedSize>445944</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="e5a69661-75cb-4a89-93b1-6d1456775021">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 AGOSTO</Name>
+          <CreatedTimestamp>2020-09-29T03:13:55.043333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.196667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.583333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4cafda75-4965-40fe-9c35-7871a9b89e70">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="920fc10e-f539-4087-9e1b-b34621ccad46">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="164c4f91-9675-42a9-a20d-70f230229265" />
+          </ProactiveCaching>
+          <EstimatedSize>580799</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="9867a58f-028d-4cc5-8177-b0467bc0ae6d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2020-09-29T03:13:55.09Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.243333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.56Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9c72f82c-7be7-445d-bebd-7ef4a7f4ff80">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="19a53b30-3770-408e-96cf-bba9b78e200b">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d353c442-cad1-4e43-81dd-5d68c460464c" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="0b25351c-b926-488f-b6f3-5eb4285adc18">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 OCTUBRE</Name>
+          <CreatedTimestamp>2020-09-29T03:13:55.106667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.273333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.186667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="958d9ba3-1de4-4ab5-b8f4-4490816663d8">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="c3f79a7c-5cd8-41c4-8fbb-d875316c72e7">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5d2e0a81-a843-444d-b13e-be78fa6a3396" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="fedf3545-3cf8-4add-8fca-0caefec21be8">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2020 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-09-29T03:13:55.123333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.32Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:36.216667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2bed8d91-620a-42be-93fa-d7d6e5ab787a">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2020_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="1ca45e55-d1bd-4a36-b2b4-5f1dcb9f3f0a">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="99d580de-0528-47cb-8f6a-68cf4a01ac08" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="2a779566-a04b-487b-9e9f-55970d703c90">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 ENERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.01Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.366667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.483333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="50e6226a-1ba2-4ccb-b966-962bf62daf8d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="97e57bb7-1b02-4f35-ba11-819db2294ae1">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="643c1550-b542-48c4-a0d2-bae33e4ee308" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="39e34335-3e5f-4047-9a4d-34260a56f98e">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 FEBRERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.04Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.4Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.093333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="30f1dad1-33bd-4d03-b562-3007f5865373">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="8d8b81d2-c4bd-44da-8a87-15b6ad74d9ff">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9822f5cb-4a05-44b4-9836-9b1a15df8322" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="f94341de-7c46-4c79-87d3-5e4e18a51e6c">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 MARZO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.07Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.463333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.093333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="553de87a-daae-4191-a8fc-16530978e319">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="982ed794-699a-4eaa-943c-3241f4b50673">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c683f60f-26bf-435a-ac9e-e8470c1a9438" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="3f162bdf-36b3-45ac-a8d0-e3b489390245">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 ABRIL</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.086667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.51Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.66Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6ffd59d7-d61d-4f68-b122-b90f2834a15b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="04ae1eac-415b-432a-924b-a5a7753dd3e5">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="713e0d13-9099-45bc-8fa3-8a02d5c32e89" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="b9d154bf-384d-4bb2-b4a1-4512144d4d88">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 MAYO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.116667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.553333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.723333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2d9b09b6-433d-4c6a-8475-4921233f7db9">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f9dac81a-3741-4769-9279-ac3014bf3f4d">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="e84167ea-7a7f-4a1f-b16d-01d34341e41a" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="370cd85e-c6bc-4daa-b735-6b3f69dfdabe">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 JUNIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.133333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.603333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:35.653333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="12ee5760-92a2-4aad-94f9-f5208ff9e367">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="bbcfcd87-9857-4dea-a0e9-5ba073a69f1b">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="999f1619-4631-4a31-8fb4-6366e777c825" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="54f2f89a-fdbf-475b-960e-31109c912560">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 JULIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.166667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.65Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.8Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fc1e0660-2a5e-47fb-943e-a2a26a102281">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="03b71603-2360-44f6-80e9-746b7db174a2">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="412af090-eabf-4a62-9ef2-a58aa06024b2" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="4e115d59-dac2-4e92-a645-a0b615118940">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 AGOSTO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.196667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.713333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.88Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="31fc7c49-826a-4077-b325-14689dd06e8b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="43c97eb2-4bca-4764-9488-669ba0b01937">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="be7ba59f-1f8a-463b-b39c-84a3d23c2494" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="394204a4-92b4-4ee4-9ced-43bbe54a3db5">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.213333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.76Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:36.153333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="76ec1e9e-9c18-4e21-a008-b36620fca748">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="c9eef954-6731-4a39-8a0d-a4e96f2277ed">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b1fb820e-4f2e-4ca6-97f5-2315cfb8b5d8" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="f1ebec67-cce9-4d14-bc1f-a0c221e0bdc3">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 OCTUBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.243333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.79Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.41Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d25db610-ddd3-4ad7-b6f2-0352b8c8b661">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="29535994-b0bd-4fd8-af93-775234c5cb5d">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="180c5fbc-8186-4cf7-a803-aa4a6fb40921" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="4c4d5fd6-97db-431f-8d96-9ecc32020fd8">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2021 NOVIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:09.273333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:38.836667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:34.503333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3225cc3b-24bd-4896-87a7-18c2170bf1d5">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2021_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b4d40b76-f879-4734-9dbd-af055508e059">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="feedb11b-dc31-4025-b481-c3dd2a931952" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="23523fc4-baba-4ecf-aa73-ef103b3d06ff">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="258430d9-30a8-4dcd-ac4e-e3096f855b35">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5433b065-8bba-4e22-aa47-3d57542bad4c">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2f177992-fbec-4fdf-8040-3ef4698b63b5">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="4071047e-7db0-4fbc-82e4-371ea59e8d3e">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b7bd662c-cc60-4a84-b1f7-70034adfe0a4">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="706a81a1-f068-4df8-9098-fd5834f7ca23">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ca2b1255-87b5-4ef3-9047-1a44c5a36284">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="2b56ccc1-6446-4fa5-8aad-51467a0dac0b">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c415ac3f-b44b-42c6-94a6-ef5dc9cd4710">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="71b3ef73-ae38-438d-baed-c6f384344802">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="070b5ec0-a5d3-4f5f-835a-96669c466f03">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c94aaf81-123f-4dd1-9cee-0cb817d8212b">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4e5e004f-0ea1-4739-a358-8fe3dacc12e3">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="d1a4c5fb-cb92-44c0-a8d0-412e92fccb67">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9c85b537-baf5-44e8-a600-16d911987f4f">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="40c65735-b46e-4536-8f4d-6638068f2c87">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3372b328-b99f-4167-9579-96d67c94aef8">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="be7c2ed4-08b4-41ce-b3bb-f3988d9fa0f2">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1d33e1c8-a5f6-4522-8353-edff78f913ec">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e398f84a-0da4-45ce-ae21-b46e10786029">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2022 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bdf5fadc-ac66-46af-a73b-3253eb91562d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2022_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="cd0029db-27ec-4fe7-967f-634529596749">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2b0abf9a-227a-48e8-bae4-9383c99b59f5">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5febd2fd-2745-458d-8c30-50a1c131a380">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0b4aa7ed-b062-428b-aad3-93fa8ba1fa67">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="2093a669-25aa-45ce-ad6a-a031ebeb6546">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="87c001cd-e369-481b-b3e0-c2d014188560">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="0219a03f-4d08-4fcd-adf2-d572f6e0e71a">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ad748c9a-24ad-4acc-b607-c88811f1e910">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="bc4a6003-d2a3-4178-bd93-6908b416bc35">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0299468c-c7b6-4c85-a4f3-ef3573590a3e">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="5e932d8b-afeb-40a7-8120-71585e47d3b6">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="328b47bf-0b06-4f17-9468-d8379a8cebac">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="59ebb1ad-8e12-4eec-a726-a36c414f1096">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bb0adb63-52cf-4896-a9fa-6c9b3554e968">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="21615d2a-1e7e-4fc7-8c7c-704e7c40c5e0">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e195c747-5b36-409a-a17c-266e511a5d1d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="7d1f88f8-b635-44f4-bae6-d14774ad48d4">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b84e0fd5-b73a-46e4-ad68-9ffbd6fe0099">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="63de6c24-47d6-4f01-9ede-b1febf2d1590">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a0e39c61-d874-44c4-a23c-6de7da30493f">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="150079a5-7289-4dd5-b505-d1f528723cba">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2023 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e5ab26ef-403e-4f84-afc1-fab4be8cbbc4">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2023_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c334f4fe-5c6b-40e5-8c41-194408450329">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a7271fcd-7198-435b-b3a2-b9bfde09498b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="4401cb33-3a90-4d63-8e22-0d0fce7b0855">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c3621362-48a5-4cba-900f-69920415b0c7">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="88bd80c1-086c-4f8e-bf1f-a5752b6bf88d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d2a76e01-7c4a-4883-bc93-2e828d79c966">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="94f0c5ff-0892-46ae-be72-26dfd9d1fd80">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f3530de2-8027-4542-8e2b-868b795ac11b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="f55ad9bc-097b-4d0d-9000-ed33bb510792">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8c4b08bb-e10f-48fe-8729-5cda0f122a6d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="bef27472-4305-4897-bf7a-e6332723874d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="402c8d51-e03b-4347-86a0-e1884ceb3097">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="7f9e6723-db89-4e9d-80fb-fdea33e08630">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="84ffb75f-bd8f-4d08-ae4c-5cfde5a171b1">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="62669323-06e2-4794-917b-93bbc4604188">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="527a6b3f-63f7-4719-94f6-da62f96c41e8">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="bb174e6c-8220-4203-8557-3c4368b0f604">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="04c31f66-e074-4389-b47e-421f0d79f762">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e15469b9-069c-43e6-a06b-b9622d54a41d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f1f5ad80-71b9-432a-8c0e-ce468c9d8a13">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e7e073cd-9d54-4f95-a998-9d9c7d3bf81a">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2024 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="67492605-7eb3-4f33-aec4-4bec4b106ecc">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2024_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="70a05d9a-d6dc-413a-938f-ac9bfb973bea">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1b0451ad-49ad-4c61-9ab0-0e9c07eb800d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="f584e612-a6fe-4014-99d6-9e99f8de19f0">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8f9988b4-d383-4e0f-bebb-4ef4a3500f97">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="0f481b2a-b061-4ee7-bd49-8df0d86a7f15">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4e6c54b9-2640-4d46-8d86-83292cb09b9d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="6be9096e-7f80-46af-aa3a-9ace8d59e8ea">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74b06996-8f26-4f0e-b05b-4786481ef051">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="0d3afcb9-5bf2-415f-9425-5eddc8564c4b">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="88986fd9-6782-4371-b744-8f45e5d4f699">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e65ed2e2-ae14-49df-81eb-ef7390127f68">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="52f8bead-d11b-49bc-9896-4994ab5d156b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="f29c2234-e10f-419a-b603-0afad7100846">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e2fd1de6-250b-4fe5-830b-19ea5f248592">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="4df2b8ee-a239-49e8-a615-276ac12d02cf">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="acc1cbe3-49ce-4204-8efc-a6bd1ad62a12">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="58118b96-b6ee-49c8-9866-a1ae5c270633">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6af2eab4-5a1e-4f91-8ca8-b2f4c6aad467">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="a78b87b0-0013-4dd2-bd9d-d09a09e1eff9">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="49a2d9cd-8211-461f-a86b-bb2b183f2270">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="42ea0c1a-ad62-4a51-bef7-6f5586077592">
+          <ID>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DISCRIMINACION 2025 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e4a7e9ff-978e-4a13-86fe-c09a10e2cc40">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DISCRIMINACION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DISCRIMINACION_2025_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

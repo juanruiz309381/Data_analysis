@@ -1,0 +1,1222 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="33441e5e-22f4-4ac7-a4fe-4ac5ed83c238" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>INFO_OTRAS_CAUSAS_DESERCION</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 ABRIL</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5efd0261-947c-461e-91d2-dc47e14001ef">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 ABRIL</Name>
+          <CreatedTimestamp>2019-09-21T02:15:12.25Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.666667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.38Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="435cff4b-dba2-4fc2-9511-812a8a744e63">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2019_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="93d25a27-c192-4a2c-b53d-851cbeeb69e0">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d532939a-02a5-41a8-9baf-cab75efc439e" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="92d464a1-a614-4450-90a6-f030a5399729">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2019 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-09-29T03:13:54.606667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.713333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.16Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e4590591-fa8a-425e-95f8-067e6cf0a8ce">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2019_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="b71bc72f-b29c-4850-91ab-62cf81551c53">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d4f941f9-8698-4357-8df5-fb50c83ca02f" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="45ac8b00-1b60-44fa-9585-d29b56eb0cd2">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 ENERO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.443333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.756667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:32.936667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="161c6f22-fa45-412d-b51d-e85121904c29">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="e9aadb9e-f32e-47b7-b4fe-40de39bead27">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="9b817767-5998-4049-a41a-cbe29a4600e1" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="b5e3d4a8-ac83-4710-a463-cf1612707bc2">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 FEBRERO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.403333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.79Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.223333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="921a6505-1b84-4304-9c17-9cafe094b5b0">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="e57abca2-c470-4b06-a44e-c01390a8afb4">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d9cebdc7-d67d-4a9b-94a1-b06ccad7ba3e" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="30b5d344-b393-4000-abba-eee1e648ff4e">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 MARZO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.3Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.836667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.51Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d96c56c2-ed8b-4be4-9dfa-7b408abf450b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="6053204e-e31d-4b9b-9b33-80876f37cb3b">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="abecc778-813f-4ed6-8a53-e1aa545659c3" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="f8b14b41-72e9-4c1a-a0f0-c50189b13262">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 ABRIL</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.52Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.866667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.446667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="df7cdf6e-25fc-48bb-8447-282b9cc8be39">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="2dfa6280-2b7c-40ca-8a2f-1da0e9d616ac">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="68a6065c-99d2-4c7f-9b97-12cdb2d47880" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="8e5fa540-b8a0-4c33-ba06-94223351b176">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 MAYO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.266667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.916667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.223333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a6284468-d86f-4350-90dd-086ceb10770d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="fc522e04-deb8-452b-9a9d-5d0821965d1d">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4f40a6d0-7392-4ee1-bfc8-e8eae2e18bfc" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="92b3a5d1-462f-4ca9-b727-5e47071ec57d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 JUNIO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.336667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.963333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.333333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6e3c2a23-9669-41f5-ad73-c14f19843501">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="59671eec-e045-4577-a64d-7ababfca79f2">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="18229deb-d183-4335-94e3-7f545228e9da" />
+          </ProactiveCaching>
+          <EstimatedSize>476418</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="21f1b878-666d-49d4-a8d7-14e4989612e6">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 JULIO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.37Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:36.993333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.556667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74829a02-c301-470c-a456-8336b1009f3e">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="41133111-3343-4904-b293-0ca8c34a97e0">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="bbb88558-bac3-4bd7-bc8b-352cf652f407" />
+          </ProactiveCaching>
+          <EstimatedSize>673552</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="40465d51-2ee5-452a-9bdb-a43cec2b528d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 AGOSTO</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.483333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.04Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.41Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3828c845-2e42-4103-9d5e-5ed11b19bff2">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="a828613c-4ec1-4698-86b6-cd63cba9eed4">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="45d59b06-051d-4f14-ac69-d8eb7af1e24d" />
+          </ProactiveCaching>
+          <EstimatedSize>894148</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="6e6fef82-1de0-46be-b507-d1c844e095dc">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.15Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.086667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.493333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ca7d0bc4-aaad-43f1-a393-e452c53f47e9">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="1d73e357-e630-49ee-99e7-a46736b58bc7">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4b745de2-79e4-421c-9a20-748981f2e924" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="c9287cb2-a7f8-4ab2-8735-2c5b375c376c">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 OCTUBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.183333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.116667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.9Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e7b814c9-6b84-49ce-ab5b-65da316cd7dc">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="0a9c4a0b-6f4f-4a96-877f-284ee44b6fbd">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="09cd6b69-dedf-4f07-8569-889860ad39b1" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="7289f4e3-517e-4f28-8d9b-3654d520f19f">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2020 NOVIEMBRE</Name>
+          <CreatedTimestamp>2020-02-01T04:48:00.226667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.15Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.68Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a1f35484-578f-480b-affe-ba9dd280b2bc">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2020_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="94e7f0a7-b608-47a0-ba68-4307d6a02c70">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="84770f41-15d3-4cc4-bfe3-f8d1a14cf0ea" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="a44e38f9-d35c-47c8-8255-a696d78d50ec">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 ENERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:07.91Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.18Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.696667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a8e54c55-ffbd-420f-955f-b1544f9efe68">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="68d9b9ce-aca4-4c3f-90fe-5931c496c700">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="cb0294a6-45f6-4a47-b802-35d620b65a77" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="3f7bb824-0c83-4b49-afb0-3b642e0cbbda">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 FEBRERO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:07.926667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.226667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.083333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e99ece1c-497d-4c4a-8d9d-58c2568974cb">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="c018a36c-167c-40f0-aed9-8a4e0c65484e">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="ea6d4d21-a1ee-4058-abe9-5e058f8394c7" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="993a993f-e627-4357-8241-5ca3758adb80">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 MARZO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:07.956667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.256667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.666667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bea01f58-3992-4d96-a5e6-b5f46ba60222">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="43fd6efb-7611-44d7-b31e-d076062b14b5">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="015547da-cb17-4fd7-bcde-64a81c04352d" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="15c08398-6720-487b-b082-47a932e33605">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 ABRIL</Name>
+          <CreatedTimestamp>2021-02-11T17:50:07.973333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.29Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.096667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f963575e-bc6a-4d8d-884a-d8df0dd89d82">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="cd6a4afe-69c0-4836-bce4-7143686491f8">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c719bb03-3521-4dba-9099-63e9e9d4afd5" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="a144991e-ca04-4290-9034-b0e344a81adb">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 MAYO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:08.006667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.32Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:32.856667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7f570943-a2c6-4105-9a37-8bfaf3812c48">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="77819a35-3cfc-44bd-9c7c-2c234211759c">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="10d530e2-8b33-460a-80bb-78809d25e56c" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="312357ce-160b-46e9-919c-3e4a153c8771">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 JUNIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:08.02Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.366667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:32.733333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c5a216ad-1e8b-4e3b-a060-11acd4f48d8a">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="93e61dff-c505-4b72-bb03-a6a304a5f071">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="47e640dd-c723-437c-a5ab-e8469d3da32b" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="3c272475-9d5e-45ae-803d-440514ac35e4">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 JULIO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:08.053333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.4Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.083333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cebacfc9-19c6-4851-a8a2-b7f037ae27e9">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="0e12bb46-b959-4dcb-8881-50c5194fd080">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="46c04e6a-4704-4605-a6dd-0935d8732827" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="8d043ceb-ee56-4e75-b214-b1fa6e338ab2">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 AGOSTO</Name>
+          <CreatedTimestamp>2021-02-11T17:50:08.07Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.446667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:33.02Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6a270dc9-fe2a-43c1-b60c-73a0af809413">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="e3bf9d34-29ae-4a9a-beb2-d0fbc3bc5d7a">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="89107f92-c0b8-47b9-9655-86629ab6471c" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="3e9aaf65-ceae-4dc0-bbd8-2bb62c654d90">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 SEPTIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:08.1Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.476667Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:32.796667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="db756add-75c8-4dcc-a299-d2acf93fc981">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="a8bd25d5-3da2-4a16-8095-7c1598a7d090">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="49504175-1e8a-48f9-b328-6dbf236c98a4" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="99af7bb0-fdfb-4411-ae06-d477c3f08372">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 OCTUBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:08.133333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.523333Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.853333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9a33007e-e13b-4d88-a211-0138e26d5873">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="28f7b4f2-2396-44ad-b038-0d5f9a524117">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c12b81ea-5b2c-4bf9-a2bb-d11ba7d25129" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="62eb1c6a-18a9-4fc5-a52a-3e745755b54e">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2021 NOVIEMBRE</Name>
+          <CreatedTimestamp>2021-02-11T17:50:08.146667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2021-02-11T17:55:37.57Z</LastSchemaUpdate>
+          <LastProcessed>2021-09-01T06:52:31.3Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d582975c-e14b-438b-89e2-60cc18460064">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2021_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="2f500bad-f842-4a6c-8b33-d7167ddccee0">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="18bfe59b-01e5-43b0-b66b-2f03f7e65cbb" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+        <Partition dwd:design-time-name="9171616e-b863-4f46-b033-f2d0fe87bd0b">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a6b958db-be66-4a76-bba8-a062fa8b20eb">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="3e8b95c9-7120-4f09-a25b-d12f5282ba19">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="34c3e20f-795a-4679-8b71-de5c3bd7873b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="17dac184-e7f2-4ca6-960b-dbe94c091cb9">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5aacbe46-ed86-480e-adaa-f1fc984154ba">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="35c76ce4-105b-43d8-936d-742f20f9b916">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1709f41f-96b1-4d05-be2f-8735eab46727">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="21bac75b-25f2-427f-be4d-2f74fcfe80e3">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="038295cc-0d54-4ed6-9a81-1879a648bbe2">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="3675e509-5c5a-4d75-a5a2-893c3c7daee8">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9c821344-cba8-4866-8eb7-14aea5243225">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="212e82d8-3550-4a98-8bf0-2ae2cf7841fa">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6d3fb191-a5f4-4620-a7bf-42ed55575ca5">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e25a6e68-6eaf-4b7f-81c5-6b02cc52a613">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5c76dedf-cf23-4dbc-83da-48e54e674cac">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="553df40a-ac96-435a-a47b-fc98e2853b90">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="24c800f8-df1c-4e2c-867c-df805c2faf8a">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="738c12a8-d8ca-453b-9b32-41a566c0cd2d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5a8ede94-5daa-4225-9543-5f625854df08">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="d633f7ae-0c75-4037-8a8b-dafed09531a5">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2022 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="39a08dc2-b9be-46c1-89fd-0e715aa3038c">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2022_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="fa1a7c56-b3f2-4fde-b07d-c3edeff4f0fa">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="61815bd9-204c-4bb3-bb02-626014d9e6f4">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="0ba9d6f6-8cd1-422c-ae43-df3b531dde84">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="58655d33-f595-44ba-9bee-4a00fa3c3c5d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="e2ac5a67-084e-48b4-9d66-9aa8f0e59a79">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="224b6fa7-4f2e-47fd-9d9c-5b95915ba5e2">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c90ec744-de13-49be-b838-3691e54dc3ae">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a23b0386-0e7c-45dd-8b7a-9557fccf5a77">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="7c40dfc5-472f-4c8f-9a27-ede7c1786958">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dcca8ba1-1651-411a-b602-1f8b1cc0b09e">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="363824e5-936d-4202-af98-43af0de0ad0c">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="794ca318-95eb-43a0-ae62-55be67c80f45">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="c9efe8d7-4642-4de2-9023-68d1b2b0e6c2">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7c697ba3-ab71-4adb-93a0-fa6690c859a2">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="6f11266c-b879-445d-8278-f9fcc2a8c0d5">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4801553d-dad0-40ee-a261-60f31ed65ce4">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="9ee72c3f-dc51-44c9-8ce1-f19f487b53d5">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ed37613f-97ef-4fd1-a78b-a50af8bba7d8">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="6ce9db32-ed5f-47db-bd3d-3000f03543b5">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b82d103b-657d-4d95-afc1-a9ef941550e4">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="263faca9-48e3-4006-a76f-b2db0384154e">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2023 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7a975177-c1e2-4b76-9e31-866537aec8bc">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2023_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="bc3d224d-3ee1-4b84-832e-a8ae89dadbc9">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a5afdd23-f418-46ff-be94-4d910dcfc549">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="987f6432-c5b0-4617-8fbc-f5a2b40a2706">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ca6f38b2-42d1-489d-9112-44ccbd57f9fa">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="38349364-e282-41c7-92ec-d0b08b3eb9ec">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fd24d3fe-b9f5-4bfc-91fa-93a86c338212">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="8ba950ea-73da-4786-9c58-9157c95f53eb">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0bbd6c3d-0cb8-46df-9968-ca0e1fa2a9d9">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="8f5f16ae-2641-40ff-9e02-8a1ff6d91d20">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d44e4eec-e06f-41df-87bc-59dcbabdb8a0">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="d5026a7d-0d7e-4fd2-9fbd-7e20691cb1fe">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2353b301-a0fd-4dc0-96a7-232e077173ac">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="49bb88c4-634a-4c9a-9386-40f35c823ed7">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="dfe69e04-45b3-4de4-a9ed-103cf175f37b">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="60d4a912-6dcb-43ff-b3c9-84252dc718c4">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="681386f1-9b88-4b2c-bf20-ec3207c32943">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="0b8b377d-d23b-49ee-bd9e-d5d5a9c1d66d">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1540d583-82e8-4e03-b943-3e3133f68520">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="f7d3bd87-eacb-4b7d-a2dc-f263a1670077">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="53bd6fec-9706-4100-99f9-2095ab3334f8">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="79aac43f-8da5-476c-860b-73f9dce21a10">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2024 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c4653d1f-01f4-439f-ab51-39a6b81ef442">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2024_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="98f4c083-34fc-4ed4-86c4-2d06de1242b4">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 ENERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 ENERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8a7d2a5b-79d1-4318-bd9e-17ce7e4225fa">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_ENERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="347242ce-4413-429a-861f-ed198df2277e">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 FEBRERO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 FEBRERO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ef34ad79-6066-4b48-bc84-b96a11f2c485">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_FEBRERO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="aff21aa1-fc5a-4370-b73a-4ac933d50efb">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 MARZO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 MARZO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="50f5622b-9d15-4d5b-975a-cd052d23dbb6">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_MARZO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="a4600308-221a-44b8-afc6-b1aa73e73ddf">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 ABRIL</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 ABRIL</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="932bcc8a-e117-4a88-945e-c4a36df1c84d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_ABRIL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="be539079-1cb2-491f-9a40-89141516c6db">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 MAYO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 MAYO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1e7a937a-4e2c-469e-a182-dbae865abd12">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_MAYO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="0d3dd1fc-839f-4a90-97f4-c6f5c0f9eac7">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 JUNIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 JUNIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="eacfcb89-76f3-40f0-b120-a831adb87250">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_JUNIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="8f2b90d1-1c0e-496d-a4ee-794f469053b9">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 JULIO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 JULIO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e03937ca-7260-4776-9ab8-3941ba1b247d">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_JULIO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="d4fb6682-a32a-42f3-93a6-f2cd7a575a04">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 AGOSTO</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 AGOSTO</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c033035f-7140-4b66-9467-5ceb5186f159">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_AGOSTO</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="9f52cc7c-f55f-436a-b6d6-42d19bebaec2">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 SEPTIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 SEPTIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="15cdc929-04aa-4c6b-81ad-0efd5a254f80">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_SEPTIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="ac582f7d-ecc4-4414-a6b7-0e93281ad9c7">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 OCTUBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 OCTUBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d33a5a65-ba1e-4460-be27-a790df2ddfd9">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_OCTUBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+        <Partition dwd:design-time-name="1469080f-d361-4b6e-a8f4-18e6222a9a1f">
+          <ID>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 NOVIEMBRE</ID>
+          <Name>FACT ALUMNO OTRAS CAUSAS DESERCION 2025 NOVIEMBRE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3a1072cd-c5a7-4696-abcc-15f2466590ce">
+            <DataSourceViewID>DS_OTRAS_CAUSAS_DESERCION</DataSourceViewID>
+            <TableID>DW_FACT_ALUMNO_OTRAS_CAUSAS_DESERCION_2025_NOVIEMBRE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
