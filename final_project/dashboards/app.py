@@ -135,6 +135,7 @@ tabs = dbc.Tabs([
     dbc.Tab(label="📊 Overview", tab_id="tab-overview"),
     dbc.Tab(label="👥 Demográfico", tab_id="tab-demografico"),
     dbc.Tab(label="🎓 Académico", tab_id="tab-academico"),
+    dbc.Tab(label="📈 Métricas & KPIs", tab_id="tab-metricas"),
     dbc.Tab(label="🤖 Predictor ML", tab_id="tab-predictor"),
 ], id="tabs", active_tab="tab-overview", className="mb-3")
 
@@ -362,6 +363,175 @@ def crear_tab_academico():
     ])
 
 # =====================================================================
+# TAB: MÉTRICAS & KPIs
+# =====================================================================
+
+def crear_tab_metricas():
+    """Crea el contenido de la pestaña Métricas y KPIs"""
+
+    if datos is None:
+        return html.Div("Error cargando datos")
+
+    df = datos['academica']
+    kpis_data = datos['kpis']
+
+    # Calcular métricas de calidad de datos
+    total_registros = len(df)
+    total_columnas = len(df.columns)
+
+    # Completitud por columna
+    completitud = {}
+    for col in df.columns:
+        no_nulos = df[col].notna().sum()
+        completitud[col] = (no_nulos / total_registros) * 100
+
+    # KPIs principales del BI
+    kpis_bi = {}
+    if not kpis_data.empty:
+        for _, row in kpis_data.iterrows():
+            kpis_bi[row['KPI']] = row['Valor']
+
+    # Estadísticas descriptivas
+    edad_stats = df['edad'].describe() if 'edad' in df.columns else None
+
+    return html.Div([
+        html.H2("Métricas, KPIs y Calidad de Datos", className="mb-4"),
+
+        # Sección 1: KPIs del Diseño BI
+        dbc.Row([
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader([
+                        html.I(className="fas fa-chart-line me-2"),
+                        "KPIs Principales del Sistema BI"
+                    ], className="bg-primary text-white"),
+                    dbc.CardBody([
+                        dbc.Row([
+                            dbc.Col([
+                                html.Div([
+                                    html.I(className="fas fa-users fa-3x text-danger mb-3"),
+                                    html.H2(f"{kpis_bi.get('Total Desertores', 0):,.0f}", className="mb-0"),
+                                    html.P("Total Desertores", className="text-muted")
+                                ], className="text-center")
+                            ], md=3),
+                            dbc.Col([
+                                html.Div([
+                                    html.I(className="fas fa-exclamation-triangle fa-3x text-warning mb-3"),
+                                    html.H2(f"{kpis_bi.get('% Alto Riesgo', 0):.2f}%", className="mb-0"),
+                                    html.P("Estudiantes Alto Riesgo", className="text-muted")
+                                ], className="text-center")
+                            ], md=3),
+                            dbc.Col([
+                                html.Div([
+                                    html.I(className="fas fa-chart-bar fa-3x text-info mb-3"),
+                                    html.H2(f"{kpis_bi.get('Score Promedio Riesgo', 0):.2f}", className="mb-0"),
+                                    html.P("Score Promedio de Riesgo", className="text-muted")
+                                ], className="text-center")
+                            ], md=3),
+                            dbc.Col([
+                                html.Div([
+                                    html.I(className="fas fa-user-shield fa-3x text-success mb-3"),
+                                    html.H2(f"{kpis_bi.get('Estudiantes Alto Riesgo', 0):,.0f}", className="mb-0"),
+                                    html.P("Requieren Intervención", className="text-muted")
+                                ], className="text-center")
+                            ], md=3),
+                        ])
+                    ])
+                ], className="shadow mb-4")
+            ], md=12)
+        ]),
+
+        # Sección 2: Calidad de Datos
+        dbc.Row([
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader([
+                        html.I(className="fas fa-database me-2"),
+                        "Calidad de los Datos"
+                    ], className="bg-success text-white"),
+                    dbc.CardBody([
+                        dbc.Row([
+                            dbc.Col([
+                                html.Div([
+                                    html.H4("📋 Resumen General"),
+                                    html.Hr(),
+                                    html.P([html.Strong("Total de Registros: "), f"{total_registros:,}"]),
+                                    html.P([html.Strong("Total de Columnas: "), f"{total_columnas}"]),
+                                    html.P([html.Strong("Periodo Analizado: "),
+                                           f"{df['periodo_año'].min():.0f} - {df['periodo_año'].max():.0f}"
+                                           if 'periodo_año' in df.columns else "N/A"]),
+                                    html.P([html.Strong("Instituciones: "),
+                                           f"{df['institucion'].nunique()}"
+                                           if 'institucion' in df.columns else "N/A"]),
+                                ])
+                            ], md=6),
+                            dbc.Col([
+                                html.Div([
+                                    html.H4("📊 Completitud Promedio"),
+                                    html.Hr(),
+                                    dcc.Graph(id='graph-completitud-metricas', config={'displayModeBar': False})
+                                ])
+                            ], md=6),
+                        ])
+                    ])
+                ], className="shadow mb-4")
+            ], md=12)
+        ]),
+
+        # Sección 3: Estadísticas Descriptivas
+        dbc.Row([
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader([
+                        html.I(className="fas fa-calculator me-2"),
+                        "Estadísticas Descriptivas - Edad"
+                    ], className="bg-info text-white"),
+                    dbc.CardBody([
+                        html.Div(id='stats-edad-table')
+                    ])
+                ], className="shadow mb-4")
+            ], md=6),
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader([
+                        html.I(className="fas fa-table me-2"),
+                        "Distribución por Variables Clave"
+                    ], className="bg-warning text-white"),
+                    dbc.CardBody([
+                        html.Div(id='stats-variables-table')
+                    ])
+                ], className="shadow mb-4")
+            ], md=6),
+        ]),
+
+        # Sección 4: Top Facultades y Programas
+        dbc.Row([
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader([
+                        html.I(className="fas fa-university me-2"),
+                        "Top 10 Facultades con Mayor Deserción"
+                    ]),
+                    dbc.CardBody([
+                        html.Div(id='table-top-facultades')
+                    ])
+                ], className="shadow mb-4")
+            ], md=6),
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader([
+                        html.I(className="fas fa-graduation-cap me-2"),
+                        "Distribución por Modalidad y Jornada"
+                    ]),
+                    dbc.CardBody([
+                        dcc.Graph(id='graph-modalidad-jornada-metricas')
+                    ])
+                ], className="shadow mb-4")
+            ], md=6),
+        ]),
+    ])
+
+# =====================================================================
 # TAB: PREDICTOR ML
 # =====================================================================
 
@@ -477,6 +647,8 @@ def render_tab_content(active_tab):
         return crear_tab_demografico()
     elif active_tab == "tab-academico":
         return crear_tab_academico()
+    elif active_tab == "tab-metricas":
+        return crear_tab_metricas()
     elif active_tab == "tab-predictor":
         return crear_tab_predictor()
     return html.Div("Seleccione una pestaña")
@@ -588,6 +760,227 @@ def update_modalidad_graph(tab):
         }
     )
     fig.update_layout(template='plotly_white', showlegend=False)
+
+    return fig
+
+# =====================================================================
+# CALLBACKS PARA TAB MÉTRICAS & KPIs
+# =====================================================================
+
+@app.callback(
+    Output('graph-completitud-metricas', 'figure'),
+    Input('tabs', 'active_tab')
+)
+def actualizar_grafico_completitud(tab):
+    """Actualiza el gráfico de completitud de datos"""
+    if datos is None or tab != 'tab-metricas':
+        return {}
+
+    df = datos['academica']
+
+    # Calcular completitud por columna
+    completitud_data = []
+    for col in df.columns:
+        porcentaje = (df[col].notna().sum() / len(df)) * 100
+        completitud_data.append({
+            'Columna': col,
+            'Completitud': porcentaje
+        })
+
+    df_completitud = pd.DataFrame(completitud_data)
+    completitud_promedio = df_completitud['Completitud'].mean()
+
+    # Crear gauge chart
+    fig = go.Figure(go.Indicator(
+        mode="gauge+number+delta",
+        value=completitud_promedio,
+        domain={'x': [0, 1], 'y': [0, 1]},
+        title={'text': "Completitud Promedio (%)", 'font': {'size': 20}},
+        delta={'reference': 100, 'increasing': {'color': "green"}},
+        gauge={
+            'axis': {'range': [None, 100], 'tickwidth': 1, 'tickcolor': "darkblue"},
+            'bar': {'color': "darkblue"},
+            'bgcolor': "white",
+            'borderwidth': 2,
+            'bordercolor': "gray",
+            'steps': [
+                {'range': [0, 50], 'color': '#ffcccc'},
+                {'range': [50, 75], 'color': '#fff4cc'},
+                {'range': [75, 90], 'color': '#d4edda'},
+                {'range': [90, 100], 'color': '#c3e6cb'}],
+            'threshold': {
+                'line': {'color': "red", 'width': 4},
+                'thickness': 0.75,
+                'value': 95}}))
+
+    fig.update_layout(
+        height=300,
+        margin=dict(l=20, r=20, t=40, b=20)
+    )
+
+    return fig
+
+@app.callback(
+    Output('stats-edad-table', 'children'),
+    Input('tabs', 'active_tab')
+)
+def actualizar_stats_edad(tab):
+    """Actualiza la tabla de estadísticas de edad"""
+    if datos is None or tab != 'tab-metricas':
+        return html.Div()
+
+    df = datos['academica']
+
+    if 'edad' not in df.columns:
+        return html.Div("No hay datos de edad disponibles")
+
+    stats = df['edad'].describe()
+
+    table_data = [
+        html.Tr([html.Td(html.Strong("Media")), html.Td(f"{stats['mean']:.2f} años")]),
+        html.Tr([html.Td(html.Strong("Mediana")), html.Td(f"{stats['50%']:.2f} años")]),
+        html.Tr([html.Td(html.Strong("Desviación Estándar")), html.Td(f"{stats['std']:.2f}")]),
+        html.Tr([html.Td(html.Strong("Mínimo")), html.Td(f"{stats['min']:.0f} años")]),
+        html.Tr([html.Td(html.Strong("Máximo")), html.Td(f"{stats['max']:.0f} años")]),
+        html.Tr([html.Td(html.Strong("Q1 (25%)")), html.Td(f"{stats['25%']:.2f} años")]),
+        html.Tr([html.Td(html.Strong("Q3 (75%)")), html.Td(f"{stats['75%']:.2f} años")]),
+    ]
+
+    return dbc.Table(
+        html.Tbody(table_data),
+        bordered=True,
+        striped=True,
+        hover=True,
+        responsive=True
+    )
+
+@app.callback(
+    Output('stats-variables-table', 'children'),
+    Input('tabs', 'active_tab')
+)
+def actualizar_stats_variables(tab):
+    """Actualiza la tabla de distribución por variables"""
+    if datos is None or tab != 'tab-metricas':
+        return html.Div()
+
+    df = datos['academica']
+
+    table_rows = []
+
+    # Género
+    if 'genero' in df.columns:
+        genero_counts = df['genero'].value_counts()
+        genero_str = ", ".join([f"{k}: {v:,}" for k, v in genero_counts.items()])
+        table_rows.append(html.Tr([html.Td(html.Strong("Género")), html.Td(genero_str)]))
+
+    # Modalidad
+    if 'modalidad' in df.columns:
+        modalidad_counts = df['modalidad'].value_counts()
+        modalidad_str = ", ".join([f"{k}: {v:,}" for k, v in modalidad_counts.items()])
+        table_rows.append(html.Tr([html.Td(html.Strong("Modalidad")), html.Td(modalidad_str)]))
+
+    # Jornada
+    if 'jornada' in df.columns:
+        jornada_counts = df['jornada'].value_counts().head(3)
+        jornada_str = ", ".join([f"{k}: {v:,}" for k, v in jornada_counts.items()])
+        table_rows.append(html.Tr([html.Td(html.Strong("Jornada (Top 3)")), html.Td(jornada_str)]))
+
+    # Estrato
+    if 'estrato' in df.columns:
+        estrato_counts = df['estrato'].value_counts().head(3)
+        estrato_str = ", ".join([f"{k}: {v:,}" for k, v in estrato_counts.items()])
+        table_rows.append(html.Tr([html.Td(html.Strong("Estrato (Top 3)")), html.Td(estrato_str)]))
+
+    return dbc.Table(
+        html.Tbody(table_rows),
+        bordered=True,
+        striped=True,
+        hover=True,
+        responsive=True
+    )
+
+@app.callback(
+    Output('table-top-facultades', 'children'),
+    Input('tabs', 'active_tab')
+)
+def actualizar_tabla_facultades(tab):
+    """Actualiza la tabla de top facultades"""
+    if datos is None or tab != 'tab-metricas':
+        return html.Div()
+
+    df = datos['academica']
+
+    if 'nombre_facultad' not in df.columns:
+        return html.Div("No hay datos de facultades disponibles")
+
+    top_facultades = df['nombre_facultad'].value_counts().head(10).reset_index()
+    top_facultades.columns = ['Facultad', 'Cantidad']
+
+    # Crear tabla
+    table_header = [
+        html.Thead(html.Tr([
+            html.Th("#"),
+            html.Th("Facultad"),
+            html.Th("Desertores", className="text-end")
+        ]))
+    ]
+
+    rows = []
+    for idx, row in top_facultades.iterrows():
+        facultad_nombre = str(row['Facultad'])[:60] + '...' if len(str(row['Facultad'])) > 60 else str(row['Facultad'])
+        rows.append(html.Tr([
+            html.Td(f"{idx + 1}"),
+            html.Td(facultad_nombre),
+            html.Td(f"{row['Cantidad']:,}", className="text-end")
+        ]))
+
+    table_body = [html.Tbody(rows)]
+
+    return dbc.Table(
+        table_header + table_body,
+        bordered=True,
+        striped=True,
+        hover=True,
+        responsive=True,
+        size='sm'
+    )
+
+@app.callback(
+    Output('graph-modalidad-jornada-metricas', 'figure'),
+    Input('tabs', 'active_tab')
+)
+def actualizar_grafico_modalidad_jornada(tab):
+    """Actualiza el gráfico de modalidad vs jornada"""
+    if datos is None or tab != 'tab-metricas':
+        return {}
+
+    df = datos['academica']
+
+    if 'modalidad' not in df.columns or 'jornada' not in df.columns:
+        return {}
+
+    # Crear tabla cruzada
+    cross_tab = pd.crosstab(df['modalidad'], df['jornada'])
+
+    fig = go.Figure()
+
+    for jornada in cross_tab.columns:
+        fig.add_trace(go.Bar(
+            name=str(jornada)[:20],
+            x=cross_tab.index,
+            y=cross_tab[jornada],
+            text=cross_tab[jornada],
+            textposition='auto',
+        ))
+
+    fig.update_layout(
+        barmode='group',
+        template='plotly_white',
+        xaxis_title='Modalidad',
+        yaxis_title='Cantidad de Desertores',
+        legend_title='Jornada',
+        height=400
+    )
 
     return fig
 

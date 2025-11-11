@@ -61,3 +61,6 @@ htmlcov/
 # Claude Code
 .claude/
 final_project/.claude/
+
+# Documentation - Excluded folders
+final_project/docs/Proy_Simpade/
