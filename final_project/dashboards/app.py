@@ -74,6 +74,33 @@ datos = cargar_datos()
 # FUNCIONES AUXILIARES
 # =====================================================================
 
+def combinar_datasets(datasets_seleccionados):
+    """Combina los datasets seleccionados"""
+    if datos is None:
+        return None
+
+    dfs = []
+    for dataset in datasets_seleccionados:
+        if dataset == 'academica' and 'academica' in datos:
+            df_temp = datos['academica'].copy()
+            df_temp['dataset_origen'] = 'Académica'
+            dfs.append(df_temp)
+        elif dataset == 'no_academica' and 'no_academica' in datos:
+            df_temp = datos['no_academica'].copy()
+            df_temp['dataset_origen'] = 'No Académica UPTC'
+            dfs.append(df_temp)
+        elif dataset == 'sena' and 'sena' in datos:
+            df_temp = datos['sena'].copy()
+            df_temp['dataset_origen'] = 'SENA'
+            dfs.append(df_temp)
+
+    if not dfs:
+        return None
+
+    # Concatenar datasets
+    df_combinado = pd.concat(dfs, ignore_index=True)
+    return df_combinado
+
 def crear_kpi_card(titulo, valor, icono, color="primary"):
     """Crea una tarjeta de KPI"""
     return dbc.Card([
@@ -139,10 +166,45 @@ tabs = dbc.Tabs([
     dbc.Tab(label="🤖 Predictor ML", tab_id="tab-predictor"),
 ], id="tabs", active_tab="tab-overview", className="mb-3")
 
+# Selector de datasets
+dataset_selector = dbc.Card([
+    dbc.CardBody([
+        dbc.Row([
+            dbc.Col([
+                html.Div([
+                    html.I(className="fas fa-database me-2"),
+                    html.Strong("Seleccionar Datasets:"),
+                ], className="mb-2")
+            ], md=12),
+        ]),
+        dbc.Row([
+            dbc.Col([
+                dbc.Checklist(
+                    options=[
+                        {"label": " Deserción Académica (3,372 registros)", "value": "academica"},
+                        {"label": " Deserción No Académica UPTC (1,009 registros)", "value": "no_academica"},
+                        {"label": " Deserción SENA (47,862 registros)", "value": "sena"},
+                    ],
+                    value=["academica"],  # Por defecto solo académica
+                    id="dataset-selector",
+                    inline=True,
+                    switch=True,
+                )
+            ], md=12),
+        ]),
+        dbc.Row([
+            dbc.Col([
+                html.Div(id="dataset-info", className="mt-2 small text-muted")
+            ], md=12)
+        ])
+    ])
+], className="mb-3")
+
 # Layout principal
 app.layout = html.Div([
     header,
     dbc.Container([
+        dataset_selector,
         tabs,
         html.Div(id="tab-content")
     ], fluid=True)
@@ -169,7 +231,7 @@ def crear_tab_overview():
         dbc.Col(crear_kpi_card("Facultad Crítica", kpis_dict['facultad_critica'], "fa-university", "success"), md=3),
     ])
 
-    # Gráficos principales
+    # Gráficos principales - 3 columnas
     graficos_row1 = dbc.Row([
         dbc.Col([
             dbc.Card([
@@ -178,7 +240,7 @@ def crear_tab_overview():
                     dcc.Graph(id='graph-temporal-overview')
                 ])
             ])
-        ], md=6),
+        ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
         dbc.Col([
             dbc.Card([
                 dbc.CardHeader("Distribución por Género"),
@@ -186,7 +248,15 @@ def crear_tab_overview():
                     dcc.Graph(id='graph-genero-overview')
                 ])
             ])
-        ], md=6),
+        ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
+        dbc.Col([
+            dbc.Card([
+                dbc.CardHeader("Deserción por Modalidad"),
+                dbc.CardBody([
+                    dcc.Graph(id='graph-modalidad-overview')
+                ])
+            ])
+        ], xs=12, sm=12, md=4),
     ], className="mb-4")
 
     graficos_row2 = dbc.Row([
@@ -197,15 +267,23 @@ def crear_tab_overview():
                     dcc.Graph(id='graph-facultades-overview')
                 ])
             ])
-        ], md=6),
+        ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
         dbc.Col([
             dbc.Card([
-                dbc.CardHeader("Deserción por Modalidad"),
+                dbc.CardHeader("Distribución por Dataset"),
                 dbc.CardBody([
-                    dcc.Graph(id='graph-modalidad-overview')
+                    dcc.Graph(id='graph-dataset-overview')
                 ])
             ])
-        ], md=6),
+        ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
+        dbc.Col([
+            dbc.Card([
+                dbc.CardHeader("Deserción por Estrato"),
+                dbc.CardBody([
+                    dcc.Graph(id='graph-estrato-overview')
+                ])
+            ])
+        ], xs=12, sm=12, md=4),
     ], className="mb-4")
 
     return html.Div([
@@ -257,7 +335,7 @@ def crear_tab_demografico():
             ], md=3),
         ], className="mb-4"),
 
-        # Gráficos demográficos
+        # Gráficos demográficos - 3 columnas
         dbc.Row([
             dbc.Col([
                 dbc.Card([
@@ -266,7 +344,7 @@ def crear_tab_demografico():
                         dcc.Graph(id='graph-edad-dist')
                     ])
                 ])
-            ], md=6),
+            ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
             dbc.Col([
                 dbc.Card([
                     dbc.CardHeader("Deserción por Estrato Socioeconómico"),
@@ -274,7 +352,15 @@ def crear_tab_demografico():
                         dcc.Graph(id='graph-estrato-dist')
                     ])
                 ])
-            ], md=6),
+            ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader("Distribución por Género"),
+                    dbc.CardBody([
+                        dcc.Graph(id='graph-genero-demografico')
+                    ])
+                ])
+            ], xs=12, sm=12, md=4),
         ], className="mb-4"),
 
         dbc.Row([
@@ -285,7 +371,7 @@ def crear_tab_demografico():
                         dcc.Graph(id='graph-edad-modalidad')
                     ])
                 ])
-            ], md=12),
+            ], xs=12, sm=12, md=12),
         ])
     ])
 
@@ -330,16 +416,8 @@ def crear_tab_academico():
             ], md=4),
         ], className="mb-4"),
 
-        # Gráficos académicos
+        # Gráficos académicos - 3 columnas
         dbc.Row([
-            dbc.Col([
-                dbc.Card([
-                    dbc.CardHeader("Deserción por Facultad"),
-                    dbc.CardBody([
-                        dcc.Graph(id='graph-facultad-analisis')
-                    ])
-                ])
-            ], md=8),
             dbc.Col([
                 dbc.Card([
                     dbc.CardHeader("Distribución por Jornada"),
@@ -347,10 +425,34 @@ def crear_tab_academico():
                         dcc.Graph(id='graph-jornada-pie')
                     ])
                 ])
-            ], md=4),
+            ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader("Modalidades"),
+                    dbc.CardBody([
+                        dcc.Graph(id='graph-modalidad-academico')
+                    ])
+                ])
+            ], xs=12, sm=12, md=4, className="mb-3 mb-md-0"),
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader("Distribución por Dataset"),
+                    dbc.CardBody([
+                        dcc.Graph(id='graph-dataset-academico')
+                    ])
+                ])
+            ], xs=12, sm=12, md=4),
         ], className="mb-4"),
 
         dbc.Row([
+            dbc.Col([
+                dbc.Card([
+                    dbc.CardHeader("Deserción por Facultad (Top 10)"),
+                    dbc.CardBody([
+                        dcc.Graph(id='graph-facultad-analisis')
+                    ])
+                ])
+            ], xs=12, sm=12, md=6, className="mb-3 mb-md-0"),
             dbc.Col([
                 dbc.Card([
                     dbc.CardHeader("Género por Facultad (Top 5)"),
@@ -358,7 +460,7 @@ def crear_tab_academico():
                         dcc.Graph(id='graph-genero-facultad')
                     ])
                 ])
-            ], md=12),
+            ], xs=12, sm=12, md=6),
         ])
     ])
 
@@ -635,6 +737,34 @@ def crear_tab_predictor():
 # CALLBACKS
 # =====================================================================
 
+# Callback para mostrar información de datasets seleccionados
+@app.callback(
+    Output('dataset-info', 'children'),
+    Input('dataset-selector', 'value')
+)
+def actualizar_info_datasets(datasets_seleccionados):
+    """Muestra información de los datasets seleccionados"""
+    if not datasets_seleccionados:
+        return html.Span("⚠️ Seleccione al menos un dataset", className="text-warning")
+
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return html.Span("❌ Error cargando datasets", className="text-danger")
+
+    total = len(df)
+    datasets_nombres = []
+    if 'academica' in datasets_seleccionados:
+        datasets_nombres.append("Académica")
+    if 'no_academica' in datasets_seleccionados:
+        datasets_nombres.append("No Académica UPTC")
+    if 'sena' in datasets_seleccionados:
+        datasets_nombres.append("SENA")
+
+    return html.Span([
+        html.I(className="fas fa-check-circle text-success me-2"),
+        f"Datasets cargados: {', '.join(datasets_nombres)} • Total: {total:,} registros"
+    ])
+
 @app.callback(
     Output("tab-content", "children"),
     Input("tabs", "active_tab")
@@ -656,13 +786,16 @@ def render_tab_content(active_tab):
 # Callbacks para gráficos de Overview
 @app.callback(
     Output('graph-temporal-overview', 'figure'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def update_temporal_graph(tab):
+def update_temporal_graph(tab, datasets_seleccionados):
     if datos is None or tab != 'tab-overview':
         return {}
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
     if 'periodo_año' not in df.columns:
         return {}
 
@@ -683,13 +816,16 @@ def update_temporal_graph(tab):
 
 @app.callback(
     Output('graph-genero-overview', 'figure'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def update_genero_graph(tab):
+def update_genero_graph(tab, datasets_seleccionados):
     if datos is None or tab != 'tab-overview':
         return {}
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
     if 'genero' not in df.columns:
         return {}
 
@@ -707,13 +843,16 @@ def update_genero_graph(tab):
 
 @app.callback(
     Output('graph-facultades-overview', 'figure'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def update_facultades_graph(tab):
+def update_facultades_graph(tab, datasets_seleccionados):
     if datos is None or tab != 'tab-overview':
         return {}
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
     if 'nombre_facultad' not in df.columns:
         return {}
 
@@ -736,13 +875,16 @@ def update_facultades_graph(tab):
 
 @app.callback(
     Output('graph-modalidad-overview', 'figure'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def update_modalidad_graph(tab):
+def update_modalidad_graph(tab, datasets_seleccionados):
     if datos is None or tab != 'tab-overview':
         return {}
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
     if 'modalidad' not in df.columns:
         return {}
 
@@ -763,20 +905,79 @@ def update_modalidad_graph(tab):
 
     return fig
 
+@app.callback(
+    Output('graph-dataset-overview', 'figure'),
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
+)
+def update_dataset_graph(tab, datasets_seleccionados):
+    if datos is None or tab != 'tab-overview' or not datasets_seleccionados:
+        return {}
+
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None or 'dataset_origen' not in df.columns:
+        return {}
+
+    dataset_counts = df['dataset_origen'].value_counts()
+
+    fig = go.Figure(data=[go.Pie(
+        labels=dataset_counts.index,
+        values=dataset_counts.values,
+        hole=0.4,
+        marker_colors=['#3498db', '#e74c3c', '#2ecc71']
+    )])
+    fig.update_layout(template='plotly_white')
+
+    return fig
+
+@app.callback(
+    Output('graph-estrato-overview', 'figure'),
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
+)
+def update_estrato_overview_graph(tab, datasets_seleccionados):
+    if datos is None or tab != 'tab-overview':
+        return {}
+
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None or 'estrato' not in df.columns:
+        return {}
+
+    # Filtrar solo valores numéricos
+    df_temp = df.copy()
+    df_temp['estrato_num'] = pd.to_numeric(df_temp['estrato'], errors='coerce')
+    df_temp = df_temp[df_temp['estrato_num'].notna()]
+
+    estrato_counts = df_temp['estrato_num'].value_counts().sort_index()
+
+    fig = px.bar(
+        x=[f'Estrato {int(e)}' for e in estrato_counts.index],
+        y=estrato_counts.values,
+        labels={'x': 'Estrato', 'y': 'Cantidad'},
+        color=estrato_counts.values,
+        color_continuous_scale='Blues'
+    )
+    fig.update_layout(template='plotly_white', showlegend=False)
+
+    return fig
+
 # =====================================================================
 # CALLBACKS PARA TAB MÉTRICAS & KPIs
 # =====================================================================
 
 @app.callback(
     Output('graph-completitud-metricas', 'figure'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def actualizar_grafico_completitud(tab):
+def actualizar_grafico_completitud(tab, datasets_seleccionados):
     """Actualiza el gráfico de completitud de datos"""
     if datos is None or tab != 'tab-metricas':
         return {}
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
 
     # Calcular completitud por columna
     completitud_data = []
@@ -822,14 +1023,17 @@ def actualizar_grafico_completitud(tab):
 
 @app.callback(
     Output('stats-edad-table', 'children'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def actualizar_stats_edad(tab):
+def actualizar_stats_edad(tab, datasets_seleccionados):
     """Actualiza la tabla de estadísticas de edad"""
     if datos is None or tab != 'tab-metricas':
         return html.Div()
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return html.Div()
 
     if 'edad' not in df.columns:
         return html.Div("No hay datos de edad disponibles")
@@ -856,14 +1060,17 @@ def actualizar_stats_edad(tab):
 
 @app.callback(
     Output('stats-variables-table', 'children'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def actualizar_stats_variables(tab):
+def actualizar_stats_variables(tab, datasets_seleccionados):
     """Actualiza la tabla de distribución por variables"""
     if datos is None or tab != 'tab-metricas':
         return html.Div()
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return html.Div()
 
     table_rows = []
 
@@ -901,14 +1108,17 @@ def actualizar_stats_variables(tab):
 
 @app.callback(
     Output('table-top-facultades', 'children'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def actualizar_tabla_facultades(tab):
+def actualizar_tabla_facultades(tab, datasets_seleccionados):
     """Actualiza la tabla de top facultades"""
     if datos is None or tab != 'tab-metricas':
         return html.Div()
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return html.Div()
 
     if 'nombre_facultad' not in df.columns:
         return html.Div("No hay datos de facultades disponibles")
@@ -947,14 +1157,17 @@ def actualizar_tabla_facultades(tab):
 
 @app.callback(
     Output('graph-modalidad-jornada-metricas', 'figure'),
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def actualizar_grafico_modalidad_jornada(tab):
+def actualizar_grafico_modalidad_jornada(tab, datasets_seleccionados):
     """Actualiza el gráfico de modalidad vs jornada"""
     if datos is None or tab != 'tab-metricas':
         return {}
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
 
     if 'modalidad' not in df.columns or 'jornada' not in df.columns:
         return {}
@@ -995,15 +1208,19 @@ def actualizar_grafico_modalidad_jornada(tab):
         Output('filter-edad', 'options'),
         Output('filter-estrato', 'options')
     ],
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def actualizar_filtros_demografico(tab):
+def actualizar_filtros_demografico(tab, datasets_seleccionados):
     """Actualiza las opciones de los filtros demográficos"""
     if datos is None or tab != 'tab-demografico':
         default_options = [{'label': 'Todos', 'value': 'all'}]
         return default_options, default_options, default_options
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        default_options = [{'label': 'Todos', 'value': 'all'}]
+        return default_options, default_options, default_options
 
     # Opciones de género
     genero_opts = [{'label': 'Todos', 'value': 'all'}]
@@ -1041,21 +1258,54 @@ def actualizar_filtros_demografico(tab):
 
     return genero_opts, edad_opts, estrato_opts
 
+# Callback para nuevo gráfico de género en demográfico
+@app.callback(
+    Output('graph-genero-demografico', 'figure'),
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value'),
+     Input('filter-edad', 'value'),
+     Input('filter-estrato', 'value')]
+)
+def actualizar_grafico_genero_demografico(tab, datasets_seleccionados, edad_rango, estrato):
+    if datos is None or tab != 'tab-demografico':
+        return {}
+
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None or 'genero' not in df.columns:
+        return {}
+
+    genero_counts = df['genero'].value_counts()
+
+    fig = go.Figure(data=[go.Pie(
+        labels=genero_counts.index,
+        values=genero_counts.values,
+        hole=0.3,
+        marker_colors=['#3498db', '#e74c3c']
+    )])
+    fig.update_layout(template='plotly_white')
+
+    return fig
+
 # Callback para gráfico de distribución de edad
 @app.callback(
     Output('graph-edad-dist', 'figure'),
     [
         Input('tabs', 'active_tab'),
+        Input('dataset-selector', 'value'),
         Input('filter-genero', 'value'),
         Input('filter-estrato', 'value')
     ]
 )
-def actualizar_grafico_edad(tab, genero, estrato):
+def actualizar_grafico_edad(tab, datasets_seleccionados, genero, estrato):
     """Actualiza el gráfico de distribución de edad"""
     if datos is None or tab != 'tab-demografico':
         return {}
 
-    df = datos['academica'].copy()
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
+
+    df = df.copy()
 
     if 'edad' not in df.columns:
         return {}
@@ -1096,16 +1346,21 @@ def actualizar_grafico_edad(tab, genero, estrato):
     Output('graph-estrato-dist', 'figure'),
     [
         Input('tabs', 'active_tab'),
+        Input('dataset-selector', 'value'),
         Input('filter-genero', 'value'),
         Input('filter-edad', 'value')
     ]
 )
-def actualizar_grafico_estrato(tab, genero, edad_rango):
+def actualizar_grafico_estrato(tab, datasets_seleccionados, genero, edad_rango):
     """Actualiza el gráfico de deserción por estrato"""
     if datos is None or tab != 'tab-demografico':
         return {}
 
-    df = datos['academica'].copy()
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
+
+    df = df.copy()
 
     if 'estrato' not in df.columns:
         return {}
@@ -1154,16 +1409,21 @@ def actualizar_grafico_estrato(tab, genero, edad_rango):
     Output('graph-edad-modalidad', 'figure'),
     [
         Input('tabs', 'active_tab'),
+        Input('dataset-selector', 'value'),
         Input('filter-genero', 'value'),
         Input('filter-estrato', 'value')
     ]
 )
-def actualizar_grafico_edad_modalidad(tab, genero, estrato):
+def actualizar_grafico_edad_modalidad(tab, datasets_seleccionados, genero, estrato):
     """Actualiza el gráfico de edad vs modalidad"""
     if datos is None or tab != 'tab-demografico':
         return {}
 
-    df = datos['academica'].copy()
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
+
+    df = df.copy()
 
     if 'edad' not in df.columns or 'modalidad' not in df.columns:
         return {}
@@ -1215,15 +1475,19 @@ def actualizar_grafico_edad_modalidad(tab, genero, estrato):
         Output('filter-modalidad', 'options'),
         Output('filter-jornada', 'options')
     ],
-    Input('tabs', 'active_tab')
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value')]
 )
-def actualizar_filtros_academico(tab):
+def actualizar_filtros_academico(tab, datasets_seleccionados):
     """Actualiza las opciones de los filtros académicos"""
     if datos is None or tab != 'tab-academico':
         default_options = [{'label': 'Todas', 'value': 'all'}]
         return default_options, default_options, default_options
 
-    df = datos['academica']
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        default_options = [{'label': 'Todas', 'value': 'all'}]
+        return default_options, default_options, default_options
 
     # Opciones de facultad
     facultad_opts = [{'label': 'Todas', 'value': 'all'}]
@@ -1257,16 +1521,21 @@ def actualizar_filtros_academico(tab):
     Output('graph-facultad-analisis', 'figure'),
     [
         Input('tabs', 'active_tab'),
+        Input('dataset-selector', 'value'),
         Input('filter-modalidad', 'value'),
         Input('filter-jornada', 'value')
     ]
 )
-def actualizar_grafico_facultad(tab, modalidad, jornada):
+def actualizar_grafico_facultad(tab, datasets_seleccionados, modalidad, jornada):
     """Actualiza el gráfico de deserción por facultad"""
     if datos is None or tab != 'tab-academico':
         return {}
 
-    df = datos['academica'].copy()
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
+
+    df = df.copy()
 
     if 'nombre_facultad' not in df.columns:
         return {}
@@ -1305,16 +1574,21 @@ def actualizar_grafico_facultad(tab, modalidad, jornada):
     Output('graph-jornada-pie', 'figure'),
     [
         Input('tabs', 'active_tab'),
+        Input('dataset-selector', 'value'),
         Input('filter-facultad', 'value'),
         Input('filter-modalidad', 'value')
     ]
 )
-def actualizar_grafico_jornada(tab, facultad, modalidad):
+def actualizar_grafico_jornada(tab, datasets_seleccionados, facultad, modalidad):
     """Actualiza el gráfico de distribución por jornada"""
     if datos is None or tab != 'tab-academico':
         return {}
 
-    df = datos['academica'].copy()
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
+
+    df = df.copy()
 
     if 'jornada' not in df.columns:
         return {}
@@ -1345,16 +1619,21 @@ def actualizar_grafico_jornada(tab, facultad, modalidad):
     Output('graph-genero-facultad', 'figure'),
     [
         Input('tabs', 'active_tab'),
+        Input('dataset-selector', 'value'),
         Input('filter-modalidad', 'value'),
         Input('filter-jornada', 'value')
     ]
 )
-def actualizar_grafico_genero_facultad(tab, modalidad, jornada):
+def actualizar_grafico_genero_facultad(tab, datasets_seleccionados, modalidad, jornada):
     """Actualiza el gráfico de género por facultad (Top 5)"""
     if datos is None or tab != 'tab-academico':
         return {}
 
-    df = datos['academica'].copy()
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None:
+        return {}
+
+    df = df.copy()
 
     if 'nombre_facultad' not in df.columns or 'genero' not in df.columns:
         return {}
@@ -1392,6 +1671,69 @@ def actualizar_grafico_genero_facultad(tab, modalidad, jornada):
         legend_title='Género',
         height=400
     )
+
+    return fig
+
+# Callback para gráfico de modalidades en académico
+@app.callback(
+    Output('graph-modalidad-academico', 'figure'),
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value'),
+     Input('filter-facultad', 'value'),
+     Input('filter-jornada', 'value')]
+)
+def actualizar_grafico_modalidad_academico(tab, datasets_seleccionados, facultad, jornada):
+    if datos is None or tab != 'tab-academico':
+        return {}
+
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None or 'modalidad' not in df.columns:
+        return {}
+
+    # Aplicar filtros
+    if facultad != 'all' and 'nombre_facultad' in df.columns:
+        df = df[df['nombre_facultad'] == facultad]
+
+    if jornada != 'all' and 'jornada' in df.columns:
+        df = df[df['jornada'] == jornada]
+
+    modalidad_counts = df['modalidad'].value_counts()
+
+    fig = go.Figure(data=[go.Pie(
+        labels=modalidad_counts.index,
+        values=modalidad_counts.values,
+        hole=0.4
+    )])
+    fig.update_layout(template='plotly_white')
+
+    return fig
+
+# Callback para gráfico de dataset en académico
+@app.callback(
+    Output('graph-dataset-academico', 'figure'),
+    [Input('tabs', 'active_tab'),
+     Input('dataset-selector', 'value'),
+     Input('filter-facultad', 'value'),
+     Input('filter-modalidad', 'value'),
+     Input('filter-jornada', 'value')]
+)
+def actualizar_grafico_dataset_academico(tab, datasets_seleccionados, facultad, modalidad, jornada):
+    if datos is None or tab != 'tab-academico':
+        return {}
+
+    df = combinar_datasets(datasets_seleccionados)
+    if df is None or 'dataset_origen' not in df.columns:
+        return {}
+
+    dataset_counts = df['dataset_origen'].value_counts()
+
+    fig = px.bar(
+        x=dataset_counts.index,
+        y=dataset_counts.values,
+        labels={'x': 'Dataset', 'y': 'Cantidad'},
+        color=dataset_counts.index
+    )
+    fig.update_layout(template='plotly_white', showlegend=False)
 
     return fig
 
