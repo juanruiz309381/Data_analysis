@@ -1,0 +1,15 @@
+features
+edad
+estrato_num
+periodo_año
+periodo_semestre
+edad_fuera_rango
+es_virtual
+estrato_bajo
+genero_M
+modalidad_PRESENCIAL
+modalidad_VIRTUAL
+jornada_DIURNA - NOCTURA
+jornada_EXTENDIDA
+jornada_NOCTURNA
+jornada_OTRA

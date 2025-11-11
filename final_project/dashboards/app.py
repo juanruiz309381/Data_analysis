@@ -632,9 +632,18 @@ def actualizar_filtros_demografico(tab):
     # Opciones de estrato
     estrato_opts = [{'label': 'Todos', 'value': 'all'}]
     if 'estrato' in df.columns:
-        estratos = sorted(df['estrato'].dropna().unique())
+        # Filtrar solo valores numéricos válidos
+        estratos = df['estrato'].dropna().unique()
+        estratos_numericos = []
+        for e in estratos:
+            try:
+                estratos_numericos.append(int(float(e)))
+            except (ValueError, TypeError):
+                pass  # Ignorar valores no numéricos como 'SIN INFORMACION'
+
+        estratos_numericos = sorted(set(estratos_numericos))
         estrato_opts.extend([
-            {'label': f'Estrato {int(e)}', 'value': str(int(e))} for e in estratos
+            {'label': f'Estrato {e}', 'value': str(e)} for e in estratos_numericos
         ])
 
     return genero_opts, edad_opts, estrato_opts
@@ -663,7 +672,12 @@ def actualizar_grafico_edad(tab, genero, estrato):
         df = df[df['genero'] == genero]
 
     if estrato != 'all' and 'estrato' in df.columns:
-        df = df[df['estrato'] == int(estrato)]
+        # Convertir estrato a numérico y filtrar
+        try:
+            estrato_val = int(estrato)
+            df = df[pd.to_numeric(df['estrato'], errors='coerce') == estrato_val]
+        except (ValueError, TypeError):
+            pass  # Si no se puede convertir, no filtrar
 
     # Crear histograma
     fig = px.histogram(
@@ -717,8 +731,12 @@ def actualizar_grafico_estrato(tab, genero, edad_rango):
         elif edad_rango == '31+':
             df = df[df['edad'] >= 31]
 
-    # Contar por estrato
-    estrato_counts = df['estrato'].value_counts().sort_index()
+    # Contar por estrato (solo valores numéricos)
+    df_estrato = df.copy()
+    df_estrato['estrato_num'] = pd.to_numeric(df_estrato['estrato'], errors='coerce')
+    df_estrato = df_estrato[df_estrato['estrato_num'].notna()]
+
+    estrato_counts = df_estrato['estrato_num'].value_counts().sort_index()
 
     fig = px.bar(
         x=[f'Estrato {int(e)}' for e in estrato_counts.index],
@@ -762,7 +780,12 @@ def actualizar_grafico_edad_modalidad(tab, genero, estrato):
         df = df[df['genero'] == genero]
 
     if estrato != 'all' and 'estrato' in df.columns:
-        df = df[df['estrato'] == int(estrato)]
+        # Convertir estrato a numérico y filtrar
+        try:
+            estrato_val = int(estrato)
+            df = df[pd.to_numeric(df['estrato'], errors='coerce') == estrato_val]
+        except (ValueError, TypeError):
+            pass  # Si no se puede convertir, no filtrar
 
     # Crear box plot
     fig = px.box(
